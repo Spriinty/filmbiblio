@@ -5,6 +5,10 @@ require './vendor/autoload.php';
 
 $router = new AltoRouter();
 
+$router->map( 'GET', '/', 'render_home', 'home' );
+
+$match = $router->match();
+
 
 
 // define('VIEW_PATH', dirname(__DIR__).'/views');
