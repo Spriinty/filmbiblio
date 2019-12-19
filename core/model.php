@@ -2,6 +2,7 @@
 class Model{
 // variable du nom de la table de la base de donnée
     public $table;
+    public $id;
 
     function read($fields=null){
         if($fields==null){  $fields="*";        }
@@ -52,16 +53,24 @@ class Model{
         $conditions="1=1";
         $fields="*";
         $limit="";
-        $order"id DESC";
+        $order="id DESC";
         if(isset($data["contitions"])){ $conditions=$data["conditions"]; }
         if(isset($data["fields"])){$fields=$data["fields"];}
         if(isset($data["limit"])){$limit="LIMIT ".$data["limit"];}
         if(isset($data["order"])){$order=$data["order"];}
         $sql = "SELECT $fields FROM ".$this->table."WHERE $conditions ORDER BY $order $limit";
+        $req=mysql_query($sql) or die(mysql_error()."<br/>=>".mysql_query());
+        $d=array();
         while($data=mysql_fetch_assoc($req)){
             $d[]=$data;
         }
         return $d;
+    }
+
+
+    public function del($id=null){
+        if($id==null){$id=$this->id;}
+        $sql="DELETE FROM ".$this->table." WHERE id=$id";
     }
 
 
