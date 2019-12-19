@@ -1,6 +1,11 @@
 <?php
+
+require('AltoRooter.php');
+$router = new AltoRouter();
+
 define('WEBROOT',str_replace('index.php','',$_SERVER['SCRIPT_NAME']));
 define('ROOT',str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
+
 
 require(ROOT.'core/model.php');
 require(ROOT.'core/controller.php');
@@ -10,8 +15,6 @@ print_r($param);
 
 echo ROOT;
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
