@@ -5,10 +5,14 @@ define('ROOT',str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
 require(ROOT.'core/model.php');
 require(ROOT.'core/controller.php');
 
-$param=explode('/',$_GET['p']);
-print_r($param);
+$param=explode('/',$_GET['path']);
+var_dump($_GET);
+$controller =$param[0];
+$action = $param[1];
 
-echo ROOT;
+require('controller/'.$controller.'.php');
+$controller=new $controller();
+
 ?>
 
 
