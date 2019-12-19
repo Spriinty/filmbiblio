@@ -2,22 +2,22 @@
 define('WEBROOT',str_replace('index.php','',$_SERVER['SCRIPT_NAME']));
 define('ROOT',str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
 
-// require(ROOT.'core/model.php');
-// require(ROOT.'core/controller.php');
+require(ROOT.'core/model.php');
+require(ROOT.'core/controller.php');
 
-// $param=explode('/',$_GET['path']);
-// var_dump($_GET);
-// $controller =$param[0];
-// $action = isset($param[1])? $param[1]:'index';
+$params=explode('/',$_GET['path']);
+var_dump($_GET);
+$controller =$params[0];
+$action = isset($params[1])? $params[1]:'index';
 
-// require('core/'.$controller.'.php');
-// $controller =new $controller();
-// if(method_exists($controller, $action)){
-//     $controller->$action;
-// }
-// else{
-//     echo 'erreur 404';
-// }
+require('controllers/'.$controller.'.php');
+$controller =new $controller();
+if(method_exists($controller, $action)){
+    $controller->$action();
+}
+else{
+    echo 'erreur 404';
+}
 ?>
 
 

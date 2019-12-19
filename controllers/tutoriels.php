@@ -1,6 +1,5 @@
 <?php
-class tutoriels extends controller{
-
+class tutoriels extends Controller{
     
     function index(){
         echo'lol';
