@@ -1,7 +1,23 @@
 <?php
 
-require('AltoRooter.php');
+require __DIR__.'/altorooter/AltoRouter.php';
+require './vendor/autoload.php';
+
 $router = new AltoRouter();
+
+
+
+// define('VIEW_PATH', dirname(__DIR__).'/views');
+
+// $router->map('GET', '/blog', function(){
+//     require VIEW_PATH . '/post/index.php';
+// });
+// $router->map('GET', '/blog/category',function(){
+//     require VIEW_PATH . '/category/show.php';
+// });
+
+// $match = $router->match();
+// $match['target']();
 
 define('WEBROOT',str_replace('index.php','',$_SERVER['SCRIPT_NAME']));
 define('ROOT',str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));

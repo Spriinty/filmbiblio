@@ -52,7 +52,7 @@ class Model{
         $conditions="1=1";
         $fields="*";
         $limit="";
-        $order"id DESC";
+        $order "id DESC";
         if(isset($data["contitions"])){ $conditions=$data["conditions"]; }
         if(isset($data["fields"])){$fields=$data["fields"];}
         if(isset($data["limit"])){$limit="LIMIT ".$data["limit"];}
