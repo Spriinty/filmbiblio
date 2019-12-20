@@ -1,69 +1,42 @@
 <?php
 
-require __DIR__.'/altorooter/AltoRouter.php';
-require './vendor/autoload.php';
+if(!empty($_GET['page']) AND !empty($_GET['s']))
+{
+    $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];       
+    $decoupe = explode("&", $url);
+    $redirection_page_prec = $decoupe[0].'&page='. ($pageActuelle-1);
+    $redirection_page_suiv = $decoupe[0].'&page='. ($pageActuelle+1);      
+}
+else
+{
+    $redirection_page_prec = "".$url."&page=".($pageActuelle-1)."";
+    $redirection_page_suiv = "".$url."&page=".($pageActuelle+1)."";    
+}
 
-$router = new AltoRouter();
+// $url = '';
+// if(isset($_GET['url'])) {
+//     $url = $_GET['url'];
+// }
 
-// map homepage
-$router->map( 'GET', '/', function() {
-	require __DIR__ . '/views/home.php';
-});
+// if($url == '') {
+//     require 'home.php';
+// } elseif(preg_match('#article-([0-9]+)#', $url, $params)) {
+//     $idArticle = $params[1];
+//     require 'article.php';
+// } else {
+//     require '404.php';
+// }
 
-// match current request url
-$match = $router->match();
+/*$url = '';
+if(isset($_GET['url'])) {
+    $url = explode('/', $_GET['url']);
+}
 
-// call closure or throw 404 status
-if( is_array($match) && is_callable( $match['target'] ) ) {
-	call_user_func_array( $match['target'], $match['params'] ); 
+if($url == '') {
+    require 'home.php';
+} elseif($url[0] == 'article' AND !empty($url[1])) {
+    $idArticle = $url[1];
+    require 'article.php';
 } else {
-	// no route was matched
-	header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
-}
-
-// define('VIEW_PATH', dirname(__DIR__).'/views');
-
-// $router->map('GET', '/blog', function(){
-//     require VIEW_PATH . '/post/index.php';
-// });
-// $router->map('GET', '/blog/category',function(){
-//     require VIEW_PATH . '/category/show.php';
-// });
-
-// $match = $router->match();
-// $match['target']();
-
-define('WEBROOT',str_replace('index.php','',$_SERVER['SCRIPT_NAME']));
-define('ROOT',str_replace('index.php','',$_SERVER['SCRIPT_FILENAME']));
-
-
-require(ROOT.'core/model.php');
-require(ROOT.'core/controller.php');
-
-$params=explode('/',$_GET['path']);
-var_dump($_GET);
-$controller =$params[0];
-$action = isset($params[1])? $params[1]:'index';
-
-require('controllers/'.$controller.'.php');
-$controller =new $controller();
-if(method_exists($controller, $action)){
-    $controller->$action();
-}
-else{
-    echo 'erreur 404';
-}
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>test</h1>
-</body>
-</html>
+    require '404.php';
+}*/
