@@ -14,6 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 class AltoRouter
 {
 
+    
     /**
      * @var array Array of all routes (incl. named routes).
      */
