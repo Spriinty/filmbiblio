@@ -8,5 +8,8 @@
 </head>
 <body>
     <h1>test</h1>
+    <form action="">
+    <button type="submit">valider</button>
+    </form>
 </body>
 </html>
