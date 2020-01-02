@@ -174,3 +174,35 @@ span{
     border: solid 5px #e82e32;
     border-radius: 50%;
 }
+
+#bg-1{
+  background-image: url(../media/action.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+
+#bg-2{
+  background-image: url(../media/action.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+
+#bg-3{
+  background-image: url(../media/action.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
+
+#bg-4{
+  background-image: url(../media/action.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+}
