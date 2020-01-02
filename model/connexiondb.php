@@ -10,6 +10,6 @@ catch(exception $e) {
 $films = $base->query('SELECT * FROM `table_films`');
 $genre = $base->query('SELECT * FROM `theme_genre`'); 
 
-SELECT * FROM TABLE1 INNER JOIN TABLE3 WHERE TABLE 1.id = TABLE 2.id
+// SELECT * FROM TABLE1 INNER JOIN TABLE3 WHERE TABLE 1.id = TABLE 2.id
 
 ?>
