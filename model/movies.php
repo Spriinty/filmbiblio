@@ -17,10 +17,17 @@ function test_input($data) {
     
     $reponse1= $base->prepare("SELECT `titre` FROM `filmdescri` WHERE `titre` LIKE '%".$_POST['search']."%'");
 
+
+    // test  ces 2 requetes sur ta base de donnée modifie la si il manque des trucs je pense que c'est un bon début
+
+    // j'ai aussi rajouté un colone id sur la table film et celle des genre ...
     $reponse2= $base->prepare("SELECT * FROM `filmdescri` INNER JOIN table_films_has_theme_genre ON filmdescri.id = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = genre.id");
 
     
-    $reponse3= $base->prepare("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
+    $reponse3= $base->prepare("SELECT filmdescri.titre AS titre, filmdescri.description AS description, filmdescri.anneesortie AS annee, filmdescri.realisateur AS realisateur, genre.genre AS genre FROM `filmdescri` INNER JOIN table_films_has_theme_genre ON filmdescri.id = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = genre.id ");
+
+// regarder Group_concat sur la doc SQL elle peut peut etre nous aider ?
+    // GROUP_CONCAT(`genre` SEPARATOR ' ')
 
     $searchStart=$search."%";
     $searchMid="%".$search."%";

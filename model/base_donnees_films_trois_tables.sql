@@ -44,7 +44,7 @@ INSERT INTO `table_films_has_theme_genre` (`table_films_idfilm`, `theme_genre_id
 (3, 17),
 (3, 22),
 (3, 30),
-(4, 33),
+(4, 32),
 (5, 7),
 (5, 15),
 (6, 8),
