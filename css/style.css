@@ -19,6 +19,7 @@ span{
 .htext{
     font-size: 2rem;
 }
+
 .img-responsive{
     width: 350px;
     height: 120px;
@@ -172,5 +173,4 @@ span{
     height: 40px;
     border: solid 5px #e82e32;
     border-radius: 50%;
-    
 }

@@ -48,7 +48,7 @@
       <div class="container m-auto p-5">
         <div class="row my-0">
           <div class="col">
-            <h2 class="text-center text-white my-5 p-5">LISTES DES GENRES</h2>
+            <h2 class="text-center text-white my-5 p-5">LISTE DES GENRES</h2>
           </div>
         </div>
         <div class="row m-0">
