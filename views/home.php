@@ -10,26 +10,27 @@
     <h1>test</h1>
     <form action="" id="form">
     <input type="search" name="search" id="search">
-    <button type="submit">Suicide Squad</button>
-    <button type="submit">Diversion</button>
-    <button type="submit">Instinct de survie</button>
-    <button type="submit">Shaolin</button>
-    <button type="submit">Bievenue chez les Ch'tis</button>
-    <button type="submit">Chicken Run</button>
-    <button type="submit">Le Mans 66</button>
-    <button type="submit">Rush</button>
-    <button type="submit">Drive</button>
-    <button type="submit">Whiplash</button>
-    <button type="submit">Get Out</button>
-    <button type="submit">Parasite</button>
-    
     </form>
     <div id="reponse"></div>
 
+    <form action="" id="buttonForm">
+    <button type="submit" id="suicide">Suicide Squad</button>
+    <button type="submit" id="diversion">Diversion</button>
+    <button type="submit" id="instinct">Instinct de survie</button>
+    <button type="submit" id="shaolin">Shaolin Soccer</button>
+    <button type="submit" id="chtis">Bievenue chez les Ch'tis</button>
+    <button type="submit" id="chicken">Chicken Run</button>
+    <button type="submit" id="mans">Le Mans 66</button>
+    <button type="submit" id="rush">Rush</button>
+    <button type="submit" id="drive">Drive</button>
+    <button type="submit" id="whiplash">Whiplash</button>
+    <button type="submit" id="getout">Get Out</button>
+    <button type="submit" id="parasite">Parasite</button>
+</form>
+<div id="reponseBouton"></div>
 <script>
     // on selectionne le formulaire
     const myForm = document.querySelector('#form');
-
 
     // on affecte une ecoute d'évenement submit
     myForm.addEventListener('keyup', function (e) {
@@ -38,8 +39,8 @@
       e.preventDefault();
 
       //on selectionne la case de formulaire
-      nameInpt = document.querySelector('#search');
-
+        nameInpt = document.querySelector('#search');
+        
 
       datas = new FormData(form);
 
@@ -69,6 +70,43 @@
       //     myDiv.innerHTML = datas
       // });
 
+    })
+
+
+    const myButtonForm = document.querySelector('#buttonForm');
+
+    // on affecte une ecoute d'évenement submit
+    myButtonForm.addEventListener('submit', function (e) {
+
+        //interrompre l'évenement par défaut
+        e.preventDefault();
+        
+        btNsuicide =document.querySelector('#suicide');
+        btNdiversion=document.querySelector('#diversion');
+        btNinstinct =document.querySelector('#instinct');
+        btNshaolin =document.querySelector('#shaolin');
+        btNchtis =document.querySelector('#chtis');
+        btNchicken =document.querySelector('#chicken');
+        btNmans =document.querySelector('#mans');
+        btNrush =document.querySelector('#rush');
+        btNdrive =document.querySelector('#drive');
+        btNwhiplash =document.querySelector('#whiplash');
+        btNgetout =document.querySelector('#getout');
+        btNparasite =document.querySelector('#parasite');
+
+    datas = new FormData(form);
+
+    //   datas.append('search', search.value);
+
+      fetch('../model/movies.php', {
+        method: 'POST',
+        body: datas
+      }).then(function (thResponse) {
+        return thResponse.text();
+      }).then(function (resulte) {
+        myDivBtn = document.querySelector('#reponseBouton');
+        myDivBtn.innerHTML = resulte
+      })
     })
     </script>
 </body>
