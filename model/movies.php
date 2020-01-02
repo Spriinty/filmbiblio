@@ -15,7 +15,7 @@ function test_input($data) {
     $base->exec("SET CHARACTER SET utf8");
     // $retour = $base->query("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
     
-    $reponse1= $base->prepare("SELECT * FROM `filmdescri` WHERE `COL 1` LIKE '%".$_POST['search']."%'");
+    $reponse1= $base->prepare("SELECT * FROM `filmdescri` WHERE `titre` LIKE '%".$_POST['search']."%'");
 
     $reponse2= $base->prepare("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
     $reponse3= $base->prepare("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
@@ -49,4 +49,4 @@ function test_input($data) {
         // echo $data['COL 1'];
         // }
         $base = null;
-?> <pre>
+?><pre>
