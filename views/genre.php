@@ -53,7 +53,7 @@
         </div>
         <div class="row m-0">
           <!-- Action -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/action.png" alt="#">
@@ -63,7 +63,7 @@
             </div>
           </div>
           <!-- ANIMATION -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/animation.png" alt="">
@@ -73,7 +73,7 @@
             </div>
           </div>
           <!-- AVENTURE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/aventure.png" alt="">
@@ -83,7 +83,7 @@
             </div>
           </div>
           <!-- BIOPIC -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/biog.png" alt="">
@@ -93,7 +93,7 @@
             </div>
           </div>
           <!-- CATASTROPHE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/catastrophe.png" alt="">
@@ -103,7 +103,7 @@
             </div>
           </div>
           <!-- COMEDIE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/comedie.png" alt="">
@@ -113,7 +113,7 @@
             </div>
           </div>
           <!-- COMEDIE DRAMATIQUE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/com-dram.png" alt="">
@@ -123,7 +123,7 @@
             </div>
           </div>
           <!--  COMEDIE MUSICALE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/com_musical.png" alt="">
@@ -133,7 +133,7 @@
             </div>
           </div>
           <!-- COMEDIE POLICIER-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/co_policier.jpg" alt="">
@@ -143,7 +143,7 @@
             </div>
           </div>
           <!-- COMEDIE ROMANTIQUE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/com_rom.png" alt="">
@@ -153,7 +153,7 @@
             </div>
           </div>
           <!-- COURT METRAGE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/court_metrage.png" alt="">
@@ -163,7 +163,7 @@
             </div>
           </div>
           <!-- DESSIN ANIMÉ -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/dessin_animé.png" alt="">
@@ -173,7 +173,7 @@
             </div>
           </div>
           <!--DOCUMENTAIRE  -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/documentaire.png" alt="">
@@ -183,7 +183,7 @@
             </div>
           </div>
           <!--  DRAME-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/drame.png" alt="">
@@ -193,7 +193,7 @@
             </div>
           </div>
           <!-- DRAME PSYCHOLOGIQUE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/drama_psy.png" alt="">
@@ -203,7 +203,7 @@
             </div>
           </div>
           <!-- EPOUVNTE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/epouvante.jpg" alt="">
@@ -213,7 +213,7 @@
             </div>
           </div>
           <!-- FANTASTIQUE -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/fantastique.png" alt="">
@@ -223,7 +223,7 @@
             </div>
           </div>
           <!-- FILM MUSICAL -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/musical.jpg" alt="">
@@ -233,7 +233,7 @@
             </div>
           </div>
           <!-- GUERRE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/guerre.png" alt="">
@@ -243,7 +243,7 @@
             </div>
           </div>
           <!-- HISTORIQUE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/historique.png" alt="">
@@ -253,7 +253,7 @@
             </div>
           </div>
           <!-- HORREUR-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/horreur.jpg" alt="">
@@ -263,7 +263,7 @@
             </div>
           </div>
           <!-- POLICIER-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/policier.jpg" alt="">
@@ -273,7 +273,7 @@
             </div>
           </div>
           <!-- POLITIQUE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/politique.png" alt="">
@@ -283,7 +283,7 @@
             </div>
           </div>
           <!-- ROMANCE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/romnance.jpg" alt="">
@@ -293,7 +293,7 @@
             </div>
           </div>
           <!-- SCIENCE FICTION-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/sc_fiction.jpg" alt="">
@@ -303,7 +303,7 @@
             </div>
           </div>
           <!-- SERIAL-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/serial.png" alt="">
@@ -313,7 +313,7 @@
             </div>
           </div>
           <!-- SPECTACLE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/spctacle.png" alt="">
@@ -323,7 +323,7 @@
             </div>
           </div>
           <!-- TELEFILM-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/telefilm.png" alt="">
@@ -333,7 +333,7 @@
             </div>
           </div>
           <!-- THRILLER-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/thriller.png" alt="">
@@ -343,7 +343,7 @@
             </div>
           </div>
           <!-- WESTERN-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/western.jpg" alt="">
@@ -353,7 +353,7 @@
             </div>
           </div>
           <!-- THEATRE-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/theatre.jpg" alt="">
@@ -363,7 +363,7 @@
             </div>
           </div>
           <!-- SPORT-->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-bottom:20px;">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-bottom:20px;">
             <div class="hoverfx">
               <img class="img-responsive w-100"
                 src="../media/sport.png" alt="">
