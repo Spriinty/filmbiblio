@@ -28,9 +28,9 @@ function test_input($data) {
 //--------DB quentin-------
     $reponse1= $base->prepare("SELECT * FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'"); 
 
-    $reponse2= $base->prepare("SELECT * FROM `table_films` INNER JOIN table_films_has_theme_genre ON table_films.idfilm = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = theme_genre.id_genre");
+    // $reponse2= $base->prepare("SELECT * FROM `table_films` INNER JOIN table_films_has_theme_genre ON table_films.idfilm = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = theme_genre.id_genre");
     
-    $reponse3= $base->prepare("SELECT table_films.titre AS `titre`, table_films.description AS `description`, table_films.anneesortie AS `annee`, table_films.realisateur AS `realisateur`, table_films.genre AS `genre` FROM `table_films` INNER JOIN table_films_has_theme_genre ON table_films.idfilm = table_films_has_theme_genre.table_films_idfilm INNER JOIN `genre` ON table_films_has_theme_genre.theme_genre_id_genre = theme_genre.id_genre");
+    // $reponse3= $base->prepare("SELECT table_films.titre AS `titre`, table_films.description AS `description`, table_films.anneesortie AS `annee`, table_films.realisateur AS `realisateur`, table_films.genre AS `genre` FROM `table_films` INNER JOIN table_films_has_theme_genre ON table_films.idfilm = table_films_has_theme_genre.table_films_idfilm INNER JOIN `genre` ON table_films_has_theme_genre.theme_genre_id_genre = theme_genre.id_genre");
 
 
     /*--- On sélectionne tous les éléments de la table film pour un id défini dans ma table idfilm est en auto incrémentation ---*/
@@ -70,18 +70,19 @@ function test_input($data) {
     $searchEnd="%".$search;
 
     $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
-    $reponse2->bindParam(':searchMid',$searchMid, PDO::PARAM_STR);
-    $reponse3->bindParam(':searchEnd',$searchEnd, PDO::PARAM_STR);
+    // $reponse2->bindParam(':searchMid',$searchMid, PDO::PARAM_STR);
+    // $reponse3->bindParam(':searchEnd',$searchEnd, PDO::PARAM_STR);
 
     $reponse1->execute();
-    $reponse2->execute();
-    $reponse3->execute();
+    // $reponse2->execute();
+    // $reponse3->execute();
 
     $allData1=$reponse1->fetchAll();
-    $allData2=$reponse2->fetchAll();
-    $allData3=$reponse3->fetchAll();
+    // $allData2=$reponse2->fetchAll();
+    // $allData3=$reponse3->fetchAll();
+    $reponsefilm1->fetchAll();
 
-    $allData = array_merge($allData1,$allData2,$allData3); 
+    $allData = array_merge($allData1); /*,$allData2,$allData3*/
  
     print_r ($allData1);
    
@@ -93,5 +94,5 @@ function test_input($data) {
         // while ($data = $retour->fetch()){
         // echo $data['COL 1'];
         // }
-        $base = null;
+    $base = null;
 ?><pre>
