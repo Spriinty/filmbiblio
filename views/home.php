@@ -14,20 +14,21 @@
     <div id="reponse"></div>
 
     <form action="" id="buttonForm">
-    <button type="submit" id="suicide">Suicide Squad</button>
-    <button type="submit" id="diversion">Diversion</button>
-    <button type="submit" id="instinct">Instinct de survie</button>
-    <button type="submit" id="shaolin">Shaolin Soccer</button>
-    <button type="submit" id="chtis">Bievenue chez les Ch'tis</button>
-    <button type="submit" id="chicken">Chicken Run</button>
-    <button type="submit" id="mans">Le Mans 66</button>
-    <button type="submit" id="rush">Rush</button>
-    <button type="submit" id="drive">Drive</button>
-    <button type="submit" id="whiplash">Whiplash</button>
-    <button type="submit" id="getout">Get Out</button>
-    <button type="submit" id="parasite">Parasite</button>
-</form>
+      <button type="submit" id="suicide" name="suicide">Suicide Squad</button>
+      <button type="submit" id="diversion" name="diversion">Diversion</button>
+      <button type="submit" id="instinct" name="instinct">Instinct de survie</button>
+      <button type="submit" id="shaolin" name="shaolin">Shaolin Soccer</button>
+      <button type="submit" id="chtis" name="chtis">Bievenue chez les Ch'tis</button>
+      <button type="submit" id="chicken" name="chicken">Chicken Run</button>
+      <button type="submit" id="mans" name="mans">Le Mans 66</button>
+      <button type="submit" id="rush" name="rush">Rush</button>
+      <button type="submit" id="drive" name="drive">Drive</button>
+      <button type="submit" id="whiplash" name="whiplash">Whiplash</button>
+      <button type="submit" id="getout" name="getout">Get Out</button>
+      <button type="submit" id="parasite" name="parasite">Parasite</button>
+    </form>
 <div id="reponseBouton"></div>
+
 <script>
     // on selectionne le formulaire
     const myForm = document.querySelector('#form');
@@ -41,7 +42,6 @@
       //on selectionne la case de formulaire
         nameInpt = document.querySelector('#search');
         
-
       datas = new FormData(form);
 
       datas.append('search', search.value);
@@ -105,9 +105,10 @@
         return thResponse.text();
       }).then(function (resulte) {
         myDivBtn = document.querySelector('#reponseBouton');
-        myDivBtn.innerHTML = resulte
+        myDivBtn.innerHTML = resulte;
       })
     })
+
     </script>
 </body>
 </html>
