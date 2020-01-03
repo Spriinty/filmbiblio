@@ -16,11 +16,12 @@ if(isset($_SERVER['REQUEST_URI']) && !empty($_SERVER['REQUEST_URI'])){
             require __DIR__ . '/views/annee.php';
             break;
         case '/model/connexion.db' :
-            require __DIR__ . '/views/home.php';
+            http_response_code(404);
+            require '../'.__DIR__ . '/views/page404.php';
             break;
         default:
             http_response_code(404);
-            require __DIR__ . '/views/404.php';
+            require __DIR__ . '/views/page404.php';
             break;
     }
 }
