@@ -1,37 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>test</h1>
+    <form action="" id="form">
+    <input type="search" name="search" id="search">
+    </form>
+    <div id="reponse"></div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <form action="" id="buttonForm">
+    <button type="submit" id="suicide">Suicide Squad</button>
+    <button type="submit" id="diversion">Diversion</button>
+    <button type="submit" id="instinct">Instinct de survie</button>
+    <button type="submit" id="shaolin">Shaolin Soccer</button>
+    <button type="submit" id="chtis">Bievenue chez les Ch'tis</button>
+    <button type="submit" id="chicken">Chicken Run</button>
+    <button type="submit" id="mans">Le Mans 66</button>
+    <button type="submit" id="rush">Rush</button>
+    <button type="submit" id="drive">Drive</button>
+    <button type="submit" id="whiplash">Whiplash</button>
+    <button type="submit" id="getout">Get Out</button>
+    <button type="submit" id="parasite">Parasite</button>
+</form>
+<div id="reponseBouton"></div>
+<script>
+    // on selectionne le formulaire
+    const myForm = document.querySelector('#form');
 
-    <title>PopCorn</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <h2>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <form>
-        <div class="form-group">
-          <label for="search">Search :</label>
-          <input type="text" class="form-control" id="search" name="search">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    // on affecte une ecoute d'évenement submit
+    myForm.addEventListener('keyup', function (e) {
 
-    </div>
-  </div>
-</div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+      //interrompre l'évenement par défaut
+      e.preventDefault();
+
+      //on selectionne la case de formulaire
+        nameInpt = document.querySelector('#search');
+        
+
+      datas = new FormData(form);
+
+      datas.append('search', search.value);
+
+      fetch('../model/movies.php', {
+        method: 'POST',
+        body: datas
+      }).then(function (theResponse) {
+        return theResponse.text();
+      }).then(function (result) {
+        myDiv = document.querySelector('#reponse');
+        myDiv.innerHTML = result
+      })
+
+      // //on execute une promesse(ajax)
+      // fetch(`traitement.php?search=${nameInpt.value}`)
+      // .then(function(theresponse){
+      //     return theresponse.text();
+      // })
+      // .then(function(datas){
+
+
+      //     const myDiv = document.querySelector('#reponse');
+
+      //     //on met la reponse dans le paragraphe
+      //     myDiv.innerHTML = datas
+      // });
+
+    })
+
+
+    const myButtonForm = document.querySelector('#buttonForm');
+
+    // on affecte une ecoute d'évenement submit
+    myButtonForm.addEventListener('submit', function (e) {
+
+        //interrompre l'évenement par défaut
+        e.preventDefault();
+        
+        btNsuicide =document.querySelector('#suicide');
+        btNdiversion=document.querySelector('#diversion');
+        btNinstinct =document.querySelector('#instinct');
+        btNshaolin =document.querySelector('#shaolin');
+        btNchtis =document.querySelector('#chtis');
+        btNchicken =document.querySelector('#chicken');
+        btNmans =document.querySelector('#mans');
+        btNrush =document.querySelector('#rush');
+        btNdrive =document.querySelector('#drive');
+        btNwhiplash =document.querySelector('#whiplash');
+        btNgetout =document.querySelector('#getout');
+        btNparasite =document.querySelector('#parasite');
+
+    datas = new FormData(form);
+
+    //   datas.append('search', search.value);
+
+      fetch('../model/movies.php', {
+        method: 'POST',
+        body: datas
+      }).then(function (thResponse) {
+        return thResponse.text();
+      }).then(function (resulte) {
+        myDivBtn = document.querySelector('#reponseBouton');
+        myDivBtn.innerHTML = resulte
+      })
+    })
+    </script>
+</body>
 </html>
