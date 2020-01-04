@@ -78,6 +78,20 @@ function test_input($data) {
     // $reponse2->execute();
     // $reponse3->execute();
 
+    /*-----IMAGES-----*/
+    $reponsefilm1->execute();
+    $reponsefilm2->execute();
+    $reponsefilm3->execute();
+    $reponsefilm4->execute();
+    $reponsefilm5->execute();
+    $reponsefilm6->execute();
+    $reponsefilm7->execute();
+    $reponsefilm8->execute();
+    $reponsefilm9->execute();
+    $reponsefilm10->execute();
+    $reponsefilm11->execute();
+    $reponsefilm12->execute();
+
     $allData1=$reponse1->fetchAll();
     // $allData2=$reponse2->fetchAll();
     // $allData3=$reponse3->fetchAll();
@@ -100,6 +114,8 @@ function test_input($data) {
     $allData = array_merge($allData1); /*,$allData2,$allData3*/
  
     print_r ($allData1);
+
+    
    
      // var_dump(count($allData));
     //  echo json_encode($allData);

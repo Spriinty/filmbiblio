@@ -159,7 +159,7 @@ datas = new FormData(form);
     method: 'POST',
     body: datas
   }).then(function (thResponseimage) {
-    return thResponse.text();
+    return thResponseimage.text();
   }).then(function (resultimage) {
     imgResponse = document.querySelector('#reponseimage');
     imgResponse.innerHTML = resultimage;
