@@ -130,7 +130,7 @@
 
 
     
-    const myButtonForm = document.querySelector('#formImage');
+    const myButtonFormImg = document.querySelector('#formImage');
 
 // on affecte une ecoute d'évenement submit
 formImage.addEventListener('click', function (e) {
