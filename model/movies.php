@@ -11,6 +11,7 @@ function test_input($data) {
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
     }
+
     $search=$_POST['search'];
     $base->exec("SET CHARACTER SET utf8");
     // $retour = $base->query("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
@@ -80,7 +81,21 @@ function test_input($data) {
     $allData1=$reponse1->fetchAll();
     // $allData2=$reponse2->fetchAll();
     // $allData3=$reponse3->fetchAll();
-    $reponsefilm1->fetchAll();
+
+    /*-----IMAGES-----*/
+
+    $allimagedata1 = $reponsefilm1->fetchAll();
+    $allimagedata2 = $reponsefilm2->fetchAll();
+    $allimagedata3 = $reponsefilm3->fetchAll();
+    $allimagedata4 = $reponsefilm4->fetchAll();
+    $allimagedata5 = $reponsefilm5->fetchAll();
+    $allimagedata6 = $reponsefilm6->fetchAll();
+    $allimagedata7 = $reponsefilm7->fetchAll();
+    $allimagedata8 = $reponsefilm8->fetchAll();
+    $allimagedata9 = $reponsefilm9->fetchAll();
+    $allimagedata10 = $reponsefilm10->fetchAll();
+    $allimagedata11 = $reponsefilm11->fetchAll();
+    $allimagedata12 = $reponsefilm12->fetchAll();
 
     $allData = array_merge($allData1); /*,$allData2,$allData3*/
  
