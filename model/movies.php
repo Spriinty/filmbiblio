@@ -16,94 +16,220 @@ function test_input($data) {
 
     
     
-    // if (isset($_POST['search'])) {
-    //     $search=$_POST['search'];
+    if (isset($_POST['search'])) {
+        $search=$_POST['search'];
 
-    //     $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+        $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
 
-    //     $searchStart=$search."%";
-    //     $searchMid="%".$search."%";
-    //     $searchEnd="%".$search;
-    //     $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
-    //     $reponse1->execute();
-    //     $allData1=$reponse1->fetchAll();
-    //     foreach ($allData1 as $key) {
-    //         if (isset($key)) {
-    //             echo $key['titre'] ;
-    //         }
-    //     }   
-    // } elseif(isset($_POST['suicidesquad'])) {
-    //     $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
-        
-    //     $reponsefilm1->execute();
-    //     $allimagedata1 = $reponsefilm1->fetchAll();
-    //     foreach ($allimagedata1 as $key) {
-    //         if (isset($key)) {
-    //             echo $key['titre'] ;
-    //         }
-    //     }
-    // } 
-    foreach($_POST as $test => $valuetest){
-        switch($test){
-            case 'search' : // Action pour forme a
-                
-                $search=$_POST['search'];
-                $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+        $searchStart=$search."%";
+        $searchMid="%".$search."%";
+        $searchEnd="%".$search;
+        $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
+        $reponse1->execute();
+        $allData1=$reponse1->fetchAll();
+        foreach ($allData1 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }   
+    } 
+    if(isset($_POST['suicidesquad'])) {
 
-                $searchStart=$search."%";
-                $searchMid="%".$search."%";
-                $searchEnd="%".$search;
-                $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
-                $reponse1->execute();
-                $allData1=$reponse1->fetchAll();
-                foreach ($allData1 as $key) {
-                    if (isset($key)) {
-                        echo $key['titre'] ;
-                    }
-                }
-
-            break;
         
-            case 'suicidesquad' : // Action pour forme b
-                
-                $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
+        $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
         
-                $reponsefilm1->execute();
-                $allimagedata1 = $reponsefilm1->fetchAll();
-                foreach ($allimagedata1 as $key) {
-                    if (isset($key)) {
-                        echo $key['titre'] ;
-                    }
-                }
-            break;
-            case 'diversionimage' : // Action pour forme b
-                
-                $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
-        
-                $reponsefilm2->execute();
-                $allimagedata2 = $reponsefilm2->fetchAll();
-                foreach ($allimagedata2 as $key) {
-                    if (isset($key)) {
-                        echo $key['titre'] ;
-                    }
-                }
-            break;
-            case 'instinctimage' : // Action pour forme b
-                
-                $reponsefilm3 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '3'");
-        
-                $reponsefilm3->execute();
-                $allimagedata3 = $reponsefilm3->fetchAll();
-                foreach ($allimagedata3 as $key) {
-                    if (isset($key)) {
-                        echo $key['titre'] ;
-                    }
-                }
-            break;
-        //    default : 
-        //       break;
+        $reponsefilm1->execute();
+        $allimagedata1 = $reponsefilm1->fetchAll();
+        foreach ($allimagedata1 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
         }
-     }
+    } 
+    if(isset($_POST['diversionimage'])) {
+        $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
+        
+        $reponsefilm2->execute();
+        $allimagedata2 = $reponsefilm2->fetchAll();
+        foreach ($allimagedata2 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    }if(isset($_POST['instinctimage'])) {
+
+        
+        $reponsefilm3 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '3'");
+        
+        $reponsefilm3->execute();
+        $allimagedata3 = $reponsefilm3->fetchAll();
+        foreach ($allimagedata3 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    } if(isset($_POST['shaolinimage'])) {
+        $reponsefilm4 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '4'");
+        
+        $reponsefilm4->execute();
+        $allimagedata4 = $reponsefilm4->fetchAll();
+        foreach ($allimagedata4 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    }if(isset($_POST['chtisimage'])) {
+
+        
+        $reponsefilm5 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '5'");
+        
+        $reponsefilm5->execute();
+        $allimagedata5 = $reponsefilm5->fetchAll();
+        foreach ($allimagedata5 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    } if(isset($_POST['chickenimage'])) {
+        $reponsefilm6 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '6'");
+        
+        $reponsefilm6->execute();
+        $allimagedata6 = $reponsefilm6->fetchAll();
+        foreach ($allimagedata6 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    }if(isset($_POST['mansimage'])) {
+
+        
+        $reponsefilm7 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '7'");
+        
+        $reponsefilm7->execute();
+        $allimagedata7 = $reponsefilm7->fetchAll();
+        foreach ($allimagedata7 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    } if(isset($_POST['rushimage'])) {
+        $reponsefilm8 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '8'");
+        
+        $reponsefilm8->execute();
+        $allimagedata8 = $reponsefilm8->fetchAll();
+        foreach ($allimagedata8 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    }if(isset($_POST['driveimage'])) {
+
+        
+        $reponsefilm9 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '9'");
+        
+        $reponsefilm9->execute();
+        $allimagedata9 = $reponsefilm9->fetchAll();
+        foreach ($allimagedata9 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    } if(isset($_POST['whiplashimage'])) {
+        $reponsefilm10 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '10'");
+        
+        $reponsefilm10->execute();
+        $allimagedata10 = $reponsefilm10->fetchAll();
+        foreach ($allimagedata10 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    }if(isset($_POST['getoutimage'])) {
+
+        
+        $reponsefilm11 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '11'");
+        
+        $reponsefilm11->execute();
+        $allimagedata11 = $reponsefilm11->fetchAll();
+        foreach ($allimagedata11 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    } if(isset($_POST['parasiteimage'])) {
+        $reponsefilm12 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '12'");
+        
+        $reponsefilm12->execute();
+        $allimagedata12 = $reponsefilm12->fetchAll();
+        foreach ($allimagedata12 as $key) {
+            if (isset($key)) {
+                echo $key['titre'] ;
+            }
+        }
+    }
+     
+    
+    // foreach($_POST as $test => $valuetest){
+    //     switch($test){
+    //         case 'search' : // Action pour forme a
+                
+    //             $search=$_POST['search'];
+    //             $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+
+    //             $searchStart=$search."%";
+    //             $searchMid="%".$search."%";
+    //             $searchEnd="%".$search;
+    //             $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
+    //             $reponse1->execute();
+    //             $allData1=$reponse1->fetchAll();
+    //             foreach ($allData1 as $key) {
+    //                 if (isset($key)) {
+    //                     echo $key['titre'] ;
+    //                 }
+    //             }
+
+    //         break;
+        
+    //         case 'suicidesquad' : // Action pour forme b
+                
+    //             $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
+        
+    //             $reponsefilm1->execute();
+    //             $allimagedata1 = $reponsefilm1->fetchAll();
+    //             foreach ($allimagedata1 as $key) {
+    //                 if (isset($key)) {
+    //                     echo $key['titre'] ;
+    //                 }
+    //             }
+    //         break;
+    //         case 'diversionimage' : // Action pour forme b
+                
+    //             $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
+        
+    //             $reponsefilm2->execute();
+    //             $allimagedata2 = $reponsefilm2->fetchAll();
+    //             foreach ($allimagedata2 as $key) {
+    //                 if (isset($key)) {
+    //                     echo $key['titre'] ;
+    //                 }
+    //             }
+    //         break;
+    //         case 'instinctimage' : // Action pour forme b
+                
+    //             $reponsefilm3 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '3'");
+        
+    //             $reponsefilm3->execute();
+    //             $allimagedata3 = $reponsefilm3->fetchAll();
+    //             foreach ($allimagedata3 as $key) {
+    //                 if (isset($key)) {
+    //                     echo $key['titre'] ;
+    //                 }
+    //             }
+    //         break;
+    //     //    default : 
+    //     //       break;
+    //     }
+    //  }
 
     
     
@@ -134,25 +260,15 @@ function test_input($data) {
     
 
     $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
-
     $reponsefilm3 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '3'");
-
     $reponsefilm4 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '4'");
-
     $reponsefilm5 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '5'");
-
     $reponsefilm6 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '6'");
-
     $reponsefilm7 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '7'");
-
     $reponsefilm8 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '8'");
-
     $reponsefilm9 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '9'");
-
     $reponsefilm10 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '10'");
-
     $reponsefilm11 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '11'");
-
     $reponsefilm12 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '12'");
 
     //--------FIN DB quentin-------

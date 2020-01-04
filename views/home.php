@@ -13,7 +13,7 @@
     </form>
     <div id="reponse"></div>
 
-    <form action="" id="formImage" name="imageButton" method="POST">
+    <form action="" id="formImage" name="formImage" method="POST">
       <input type="text" id="suicidesquad" name="suicidesquad" hidden>
       <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
       <input type="text" id="diversionimage" name="diversionimage" hidden>
@@ -109,9 +109,9 @@ myButtonFormImg.addEventListener('submit', function (e) {
     imgwhiplash =document.querySelector('#whiplashimage');
     imggetout =document.querySelector('#getoutimage');
     imgparasite =document.querySelector('#parasiteimage');
+    
 
 datas = new FormData(myButtonFormImg);
-
   
 
   fetch('../model/movies.php', {
@@ -123,6 +123,7 @@ datas = new FormData(myButtonFormImg);
     imgResponse = document.querySelector('#reponseimage');
     imgResponse.innerHTML = resultimage;
   })
+  
 })
 
     </script>
