@@ -92,7 +92,7 @@
     const myButtonFormImg = document.querySelector('#formImage');
 
 // on affecte une ecoute d'évenement submit
-myButtonFormImg.addEventListener('submit', function (e) {
+myButtonFormImg.addEventListener('click', function (e) {
 
     //interrompre l'évenement par défaut
     e.preventDefault();
@@ -111,8 +111,6 @@ myButtonFormImg.addEventListener('submit', function (e) {
     imgparasite =document.querySelector('#parasiteimage');
 
 datas = new FormData(myButtonFormImg);
-
-  
 
   fetch('../model/movies.php', {
     method: 'POST',

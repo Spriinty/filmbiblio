@@ -58,10 +58,9 @@ function test_input($data) {
                 $allData1=$reponse1->fetchAll();
                 foreach ($allData1 as $key) {
                     if (isset($key)) {
-                        echo $key['titre'] ;
+                        echo $key['titre'].'<br>'.$key['description'].'<br>'.$key['anneesortie'].'<br>'.$key['realisateur'];
                     }
                 }
-
             break;
         
             case 'suicidesquad' : // Action pour forme b
