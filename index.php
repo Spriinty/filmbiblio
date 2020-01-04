@@ -4,6 +4,7 @@ var_dump($_SERVER['REQUEST_URI']);
 
 if(isset($_SERVER['REQUEST_URI']) && !empty($_SERVER['REQUEST_URI'])){
     $request = $_SERVER['REQUEST_URI'];
+    
 
     switch ($request) {
         case '/' :
