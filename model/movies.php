@@ -13,9 +13,9 @@ function test_input($data) {
     }
 
     $search=$_POST['search'];
-    $btNsuicide=$_POST['suicide'];
-    var_dump($_POST);
-    echo $btNsuicide;
+    $btNsuicide=$_POST['suicidesquad'];
+    var_dump ($_POST['suicidesquad']);
+    
     $base->exec("SET CHARACTER SET utf8");
     // $retour = $base->query("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
     

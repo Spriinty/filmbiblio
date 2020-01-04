@@ -13,20 +13,6 @@
     </form>
     <div id="reponse"></div>
 
-    <form action="" id="buttonForm" method="post">
-      <button type="submit" id="suicide" name="suicide">Suicide Squad</button>
-      <button type="submit" id="diversion" name="diversion">Diversion</button>
-      <button type="submit" id="instinct" name="instinct">Instinct de survie</button>
-      <button type="submit" id="shaolin" name="shaolin">Shaolin Soccer</button>
-      <button type="submit" id="chtis" name="chtis">Bievenue chez les Ch'tis</button>
-      <button type="submit" id="chicken" name="chicken">Chicken Run</button>
-      <button type="submit" id="mans" name="mans">Le Mans 66</button>
-      <button type="submit" id="rush" name="rush">Rush</button>
-      <button type="submit" id="drive" name="drive">Drive</button>
-      <button type="submit" id="whiplash" name="whiplash">Whiplash</button>
-      <button type="submit" id="getout" name="getout">Get Out</button>
-      <button type="submit" id="parasite" name="parasite">Parasite</button>
-    </form>
     <div id="reponseBouton"></div>
 
     <form action="" id="formImage">
@@ -89,46 +75,6 @@
       //     myDiv.innerHTML = datas
       // });
 
-    })
-
-
-    const myButtonForm = document.querySelector('#buttonForm');
-
-    // on affecte une ecoute d'évenement submit
-    myButtonForm.addEventListener('submit', function (e){
-
-        //interrompre l'évenement par défaut
-        e.preventDefault();
-        
-        btNsuicide =document.querySelector('#suicide');
-        btNdiversion=document.querySelector('#diversion');
-        btNinstinct =document.querySelector('#instinct');
-        btNshaolin =document.querySelector('#shaolin');
-        btNchtis =document.querySelector('#chtis');
-        btNchicken =document.querySelector('#chicken');
-        btNmans =document.querySelector('#mans');
-        btNrush =document.querySelector('#rush');
-        btNdrive =document.querySelector('#drive');
-        btNwhiplash =document.querySelector('#whiplash');
-        btNgetout =document.querySelector('#getout');
-        btNparasite =document.querySelector('#parasite');
-
-    datas = new FormData(myButtonForm);
-    
-    
-    
-
-    //   datas.append('search', search.value);
-
-      fetch('../model/movies.php', {
-        method: 'POST',
-        body: datas
-      }).then(function (thResponse) {
-        return thResponse.text();
-      }).then(function (resulte) {
-        myDivBtn = document.querySelector('#reponseBouton');
-        myDivBtn.innerHTML = resulte;
-      })
     })
 
 
