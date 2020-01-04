@@ -111,11 +111,11 @@ function test_input($data) {
     $allimagedata11 = $reponsefilm11->fetchAll();
     $allimagedata12 = $reponsefilm12->fetchAll();
 
-    $allData = array_merge($allData1); /*,$allData2,$allData3*/
+    $allData = array_merge($allData1,); /*,$allData2,$allData3*/
  
-    print_r ($allData1);
+    print_r ($allData1$,$allimagedata1,$allimagedata2,$allimagedata3,$allimagedata4,$allimagedata5,$allimagedata6,$allimagedata7,$allimagedata8,$allimagedata9,$allimagedata10,$allimagedata11,$allimagedata12);
 
-    
+
    
      // var_dump(count($allData));
     //  echo json_encode($allData);
