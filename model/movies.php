@@ -11,12 +11,104 @@ function test_input($data) {
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
     }
-
-    $search=$_POST['search'];
-    $btNsuicide=$_POST['suicidesquad'];
-    var_dump ($_POST['suicidesquad']);
     
     $base->exec("SET CHARACTER SET utf8");
+
+    
+    
+    // if (isset($_POST['search'])) {
+    //     $search=$_POST['search'];
+
+    //     $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+
+    //     $searchStart=$search."%";
+    //     $searchMid="%".$search."%";
+    //     $searchEnd="%".$search;
+    //     $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
+    //     $reponse1->execute();
+    //     $allData1=$reponse1->fetchAll();
+    //     foreach ($allData1 as $key) {
+    //         if (isset($key)) {
+    //             echo $key['titre'] ;
+    //         }
+    //     }   
+    // } elseif(isset($_POST['suicidesquad'])) {
+    //     $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
+        
+    //     $reponsefilm1->execute();
+    //     $allimagedata1 = $reponsefilm1->fetchAll();
+    //     foreach ($allimagedata1 as $key) {
+    //         if (isset($key)) {
+    //             echo $key['titre'] ;
+    //         }
+    //     }
+    // } 
+    foreach($_POST as $test => $valuetest){
+        switch($test){
+            case 'search' : // Action pour forme a
+                
+                $search=$_POST['search'];
+                $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+
+                $searchStart=$search."%";
+                $searchMid="%".$search."%";
+                $searchEnd="%".$search;
+                $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
+                $reponse1->execute();
+                $allData1=$reponse1->fetchAll();
+                foreach ($allData1 as $key) {
+                    if (isset($key)) {
+                        echo $key['titre'] ;
+                    }
+                }
+
+            break;
+        
+            case 'suicidesquad' : // Action pour forme b
+                
+                $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
+        
+                $reponsefilm1->execute();
+                $allimagedata1 = $reponsefilm1->fetchAll();
+                foreach ($allimagedata1 as $key) {
+                    if (isset($key)) {
+                        echo $key['titre'] ;
+                    }
+                }
+            break;
+            case 'diversionimage' : // Action pour forme b
+                
+                $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
+        
+                $reponsefilm2->execute();
+                $allimagedata2 = $reponsefilm2->fetchAll();
+                foreach ($allimagedata2 as $key) {
+                    if (isset($key)) {
+                        echo $key['titre'] ;
+                    }
+                }
+            break;
+            case 'instinctimage' : // Action pour forme b
+                
+                $reponsefilm3 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '3'");
+        
+                $reponsefilm3->execute();
+                $allimagedata3 = $reponsefilm3->fetchAll();
+                foreach ($allimagedata3 as $key) {
+                    if (isset($key)) {
+                        echo $key['titre'] ;
+                    }
+                }
+            break;
+        //    default : 
+        //       break;
+        }
+     }
+
+    
+    
+    
+    
     // $retour = $base->query("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
     
     // $reponse1= $base->prepare("SELECT `titre` FROM `filmdescri` WHERE `titre` LIKE '%".$_POST['search']."%'");
@@ -30,7 +122,7 @@ function test_input($data) {
     // $reponse3= $base->prepare("SELECT filmdescri.titre AS titre, filmdescri.description AS description, filmdescri.anneesortie AS annee, filmdescri.realisateur AS realisateur, genre.genre AS genre FROM `filmdescri` INNER JOIN table_films_has_theme_genre ON filmdescri.id = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = genre.id ");
 
 //--------DB quentin-------
-    $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'"); 
+ 
 
     // $reponse2= $base->prepare("SELECT * FROM `table_films` INNER JOIN table_films_has_theme_genre ON table_films.idfilm = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = theme_genre.id_genre");
     
@@ -39,7 +131,7 @@ function test_input($data) {
 
     /*--- On sélectionne tous les éléments de la table film pour un id défini dans ma table idfilm est en auto incrémentation ---*/
 
-    $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
+    
 
     $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
 
@@ -69,20 +161,18 @@ function test_input($data) {
 // regarder Group_concat sur la doc SQL elle peut peut etre nous aider ?
     // GROUP_CONCAT(`genre` SEPARATOR ' ')
 
-    $searchStart=$search."%";
-    $searchMid="%".$search."%";
-    $searchEnd="%".$search;
+    
 
-    $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
+    
     // $reponse2->bindParam(':searchMid',$searchMid, PDO::PARAM_STR);
     // $reponse3->bindParam(':searchEnd',$searchEnd, PDO::PARAM_STR);
 
-    $reponse1->execute();
+    
     // $reponse2->execute();
     // $reponse3->execute();
 
     /*-----IMAGES-----*/
-    $reponsefilm1->execute();
+    
     
     $reponsefilm2->execute();
     $reponsefilm3->execute();
@@ -96,13 +186,13 @@ function test_input($data) {
     $reponsefilm11->execute();
     $reponsefilm12->execute();
 
-    $allData1=$reponse1->fetchAll();
+    
     // $allData2=$reponse2->fetchAll();
     // $allData3=$reponse3->fetchAll();
 
     /*-----IMAGES-----*/
 
-    $allimagedata1 = $reponsefilm1->fetchAll();
+    
     $allimagedata2 = $reponsefilm2->fetchAll();
     $allimagedata3 = $reponsefilm3->fetchAll();
     $allimagedata4 = $reponsefilm4->fetchAll();
@@ -115,13 +205,9 @@ function test_input($data) {
     $allimagedata11 = $reponsefilm11->fetchAll();
     $allimagedata12 = $reponsefilm12->fetchAll();
 
-    $allData = array_merge($allimagedata1,$allimagedata2,$allimagedata3,$allimagedata4,$allimagedata5,$allimagedata6,$allimagedata7,$allimagedata8,$allimagedata9,$allimagedata10,$allimagedata11,$allimagedata12); /*,$allData2,$allData3*/
+    // $allData = array_merge($allimagedata1,$allimagedata2,$allimagedata3,$allimagedata4,$allimagedata5,$allimagedata6,$allimagedata7,$allimagedata8,$allimagedata9,$allimagedata10,$allimagedata11,$allimagedata12); /*,$allData2,$allData3*/
 
-    foreach ($allData1 as $key) {
-        if (isset($key)) {
-            echo $key['titre'] ;
-        }
-    }
+    
 
 
    

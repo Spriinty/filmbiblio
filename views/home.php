@@ -13,21 +13,31 @@
     </form>
     <div id="reponse"></div>
 
-    <div id="reponseBouton"></div>
-
-    <form action="" id="formImage">
-      <input type="image" src="../media/musical.jpg" id="suicidesquad" name="suicidesquad" width="15%">
-      <input type="image" src="../media/musical.jpg" id="diversionimage" name="diversionimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="instinctimage" name="instinctimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="shaolinimage" name="shaolinimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="chtisimage" name="chtisimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="chickenimage" name="chickenimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="mansimage" name="mansimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="rushimage" name="rushimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="driveimage" name="driveimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="whiplashimage" name="whiplashimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="getoutimage" name="getoutimage" width="15%">
-      <input type="image" src="../media/musical.jpg" id="parasiteimage" name="parasiteimage" width="15%">
+    <form action="" id="formImage" name="imageButton" method="POST">
+      <input type="text" id="suicidesquad" name="suicidesquad" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text" id="diversionimage" name="diversionimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text" id="instinctimage" name="instinctimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text" id="shaolinimage" name="shaolinimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text" id="chtisimage" name="chtisimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="chickenimage" name="chickenimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="mansimage" name="mansimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="rushimage" name="rushimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="driveimage" name="driveimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="whiplashimage" name="whiplashimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="getoutimage" name="getoutimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+      <input type="text"  id="parasiteimage" name="parasiteimage" hidden>
+      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
     </form>
 
     <div id="reponseimage"></div>
@@ -82,12 +92,12 @@
     const myButtonFormImg = document.querySelector('#formImage');
 
 // on affecte une ecoute d'évenement submit
-myButtonFormImg.addEventListener('click', function (e) {
+myButtonFormImg.addEventListener('submit', function (e) {
 
     //interrompre l'évenement par défaut
     e.preventDefault();
     
-    imgsSuicide =document.querySelector('#suicidesquadimage');
+    imgsSuicide =document.querySelector('#suicidesquad');
     imgdiversion=document.querySelector('#diversionimage');
     imginstinct =document.querySelector('#instinctimage');
     imgshaolin =document.querySelector('#shaolinimage');
@@ -100,9 +110,9 @@ myButtonFormImg.addEventListener('click', function (e) {
     imggetout =document.querySelector('#getoutimage');
     imgparasite =document.querySelector('#parasiteimage');
 
-datas = new FormData(form);
+datas = new FormData(myButtonFormImg);
 
-//   datas.append('search', search.value);
+  
 
   fetch('../model/movies.php', {
     method: 'POST',
