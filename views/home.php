@@ -95,7 +95,7 @@
     const myButtonForm = document.querySelector('#buttonForm');
 
     // on affecte une ecoute d'évenement submit
-    myButtonForm.addEventListener('submit', function (e) {
+    myButtonForm.addEventListener('submit', function (e){
 
         //interrompre l'évenement par défaut
         e.preventDefault();
@@ -130,10 +130,10 @@
 
 
     
-    const myButtonForm = document.querySelector('#formImage');
+    const myButtonFormImg = document.querySelector('#formImage');
 
 // on affecte une ecoute d'évenement submit
-formImage.addEventListener('click', function (e) {
+myButtonFormImg.addEventListener('click', function (e) {
 
     //interrompre l'évenement par défaut
     e.preventDefault();
