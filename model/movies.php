@@ -13,6 +13,9 @@ function test_input($data) {
     }
 
     $search=$_POST['search'];
+    $btNsuicide=$_POST['suicide'];
+    var_dump($_POST);
+    echo $btNsuicide;
     $base->exec("SET CHARACTER SET utf8");
     // $retour = $base->query("SELECT * FROM `table_dep` WHERE `nom_maj_first` LIKE '%".$_POST['search']."%' OR `num` LIKE '%".$_POST['search']."%' OR `maj_nom_entier` LIKE '".$_POST['search']."%' OR `min_nom_entier` LIKE '%".$_POST['search']."%'");
     
@@ -27,7 +30,7 @@ function test_input($data) {
     // $reponse3= $base->prepare("SELECT filmdescri.titre AS titre, filmdescri.description AS description, filmdescri.anneesortie AS annee, filmdescri.realisateur AS realisateur, genre.genre AS genre FROM `filmdescri` INNER JOIN table_films_has_theme_genre ON filmdescri.id = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = genre.id ");
 
 //--------DB quentin-------
-    $reponse1= $base->prepare("SELECT * FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'"); 
+    $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'"); 
 
     // $reponse2= $base->prepare("SELECT * FROM `table_films` INNER JOIN table_films_has_theme_genre ON table_films.idfilm = table_films_has_theme_genre.table_films_idfilm INNER JOIN genre ON table_films_has_theme_genre.theme_genre_id_genre = theme_genre.id_genre");
     
@@ -80,6 +83,7 @@ function test_input($data) {
 
     /*-----IMAGES-----*/
     $reponsefilm1->execute();
+    
     $reponsefilm2->execute();
     $reponsefilm3->execute();
     $reponsefilm4->execute();
@@ -111,9 +115,13 @@ function test_input($data) {
     $allimagedata11 = $reponsefilm11->fetchAll();
     $allimagedata12 = $reponsefilm12->fetchAll();
 
-    $allData = array_merge($allData1,$allimagedata1,$allimagedata2,$allimagedata3,$allimagedata4,$allimagedata5,$allimagedata6,$allimagedata7,$allimagedata8,$allimagedata9,$allimagedata10,$allimagedata11,$allimagedata12); /*,$allData2,$allData3*/
- 
-    print_r ($allData1);
+    $allData = array_merge($allimagedata1,$allimagedata2,$allimagedata3,$allimagedata4,$allimagedata5,$allimagedata6,$allimagedata7,$allimagedata8,$allimagedata9,$allimagedata10,$allimagedata11,$allimagedata12); /*,$allData2,$allData3*/
+
+    foreach ($allData1 as $key) {
+        if (isset($key)) {
+            echo $key['titre'] ;
+        }
+    }
 
 
    

@@ -13,7 +13,7 @@
     </form>
     <div id="reponse"></div>
 
-    <form action="" id="buttonForm">
+    <form action="" id="buttonForm" method="post">
       <button type="submit" id="suicide" name="suicide">Suicide Squad</button>
       <button type="submit" id="diversion" name="diversion">Diversion</button>
       <button type="submit" id="instinct" name="instinct">Instinct de survie</button>
@@ -61,8 +61,8 @@
       //on selectionne la case de formulaire
         nameInpt = document.querySelector('#search');
         
-      datas = new FormData(form);
-
+      datas = new FormData(myForm);
+      
       datas.append('search', search.value);
 
       fetch('../model/movies.php', {
@@ -113,7 +113,10 @@
         btNgetout =document.querySelector('#getout');
         btNparasite =document.querySelector('#parasite');
 
-    datas = new FormData(form);
+    datas = new FormData(myButtonForm);
+    
+    
+    
 
     //   datas.append('search', search.value);
 
