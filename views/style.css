@@ -75,6 +75,22 @@ button:focus {
     color: #e82e32;
     }
 
+    @media (max-width: 767.98px) {
+        .searchbar:hover > .search_input{
+            padding: 0 10px;
+            width: 350px;
+            caret-color: #e82e32;
+            transition: width 0.4s linear;
+            }
+    }
+    @media (max-width: 575.98px) { 
+        .searchbar:hover > .search_input{
+            padding: 0 10px;
+            width: 200px;
+            caret-color: #e82e32;
+            transition: width 0.4s linear;
+            }
+    }
     .search_icon{
     height: 40px;
     width: 40px;

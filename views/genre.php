@@ -50,31 +50,25 @@
 
     <!-- HEADER -->
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand m-0 text-white htext  font-weight-bold"
-                    href="#"><span>P</span>op<span>C</span>orn<img src="../media/popcorn.png" width="35" height="35"
-                        alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-lg-end justify-content-xl-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-end align-items-end ">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="home.html"><span>A</span>cceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="genre.php"><span>G</span>enre</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="page404.php"><span>D</span>ate de sortie</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand m-0 text-white htext h2 font-weight-bold" href="home.html"><span class="text-red">P</span>op<span
+          class="text-red">C</span>orn<img src="media/popcorn.png" width="26" height="28" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-white font-weight-bold text-right" href="home.html"><span
+              class="text-red">A</span>ccueil</a>
+          <a class="nav-item nav-link text-white font-weight-bold text-right" href="genre.php"><span
+              class="text-red">G</span>enre</a>
+          <a class="nav-item nav-link text-white font-weight-bold text-right" href="page404.php"><span
+              class="text-red">D</span>ate de sortie</a>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
     <!-- fin header -->
     <!-- section -->
     <section>
@@ -83,7 +77,7 @@
             <div class="container m-auto p-5">
                 <div class="row my-0">
                     <div class="col">
-                        <h2 class="text-center text-white my-5 p-5">LISTE DES GENRES</h2>
+                        <h2 class="text-center text-white mb-5 p-5 font-weight-bold text-center">LISTE DES GENRES</h2>
                     </div>
                 </div>
                 <form action="" id="genre_form">
