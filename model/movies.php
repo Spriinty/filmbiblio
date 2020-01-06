@@ -1,4 +1,4 @@
-   <pre><?php
+ <?php
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -27,8 +27,8 @@ function test_input($data) {
         $allData1=$reponse1->fetchAll();
         foreach ($allData1 as $key) {
             if (isset($key)) {
-                echo '<div class="row mt-4 d-flex justify-content-center">';
-                echo '<div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
+                
+                echo '<div class="col-12 mt-4 col-sm-3 col-md-3 col-lg-2 text-center">
                 <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
                       src="./media/'.$key['idfilm'].'.jpg" alt="Affiche Chicken Run" width="241" height="332"
                       name="$key"></a>
@@ -176,4 +176,4 @@ function test_input($data) {
     }
  
     $base = null;
-?><pre>
+?>
