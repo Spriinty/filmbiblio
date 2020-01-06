@@ -6,7 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -18,7 +18,7 @@ function test_input($data) {
         $search=$_POST['search'];
 
         $reponse1= $base->prepare("SELECT `idfilm`,`titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$search."%'");
-
+        $reponse_genre = $base->prepare("SELECT `id_genre`,`genre` FROM `theme_genre`");
         $searchStart=$search."%";
         $searchMid="%".$search."%";
         $searchEnd="%".$search;
@@ -27,10 +27,17 @@ function test_input($data) {
         $allData1=$reponse1->fetchAll();
         foreach ($allData1 as $key) {
             if (isset($key)) {
-                echo '<div class="mt-4 col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center">
-                <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                echo 
+                '<div class="mt-4 col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center">
+                    <p>
+                        <a href="#">
+                            <input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
                       src="./media/'.$key['idfilm'].'.jpg" alt="Affiche Chicken Run" width="241" height="332"
-                      name="$key"></a></p></div>';
+                      name="$key"></a></p></div>'.'<div class="mt-4 col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center">
+                      <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                            src="./media/'.$key['idfilm'].'.jpg" alt="Affiche Chicken Run" width="241" height="332"
+                            name="$key"></a></p></div>';
+
                 echo  '<style>.formulairedisplay { display:none;}</style>';
             }
         }   
