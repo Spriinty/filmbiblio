@@ -18,7 +18,7 @@ function test_input($data) {
     if (isset($_POST['search'])) {
         $search=$_POST['search'];
 
-        $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+        $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$search."%'");
 
         $searchStart=$search."%";
         $searchMid="%".$search."%";
