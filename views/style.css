@@ -1,0 +1,115 @@
+/* FONT IMPORT SYSTEM */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b2a2e;
+}
+
+/* BACKGROUND SYSTEM */
+.bg-bladerunner{
+    background-image: url("../views/media/bg-bladerunner.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bg-deepdive{
+    background-image: url("../views/media/bg-deepdive.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* TEXT SYSTEM */
+.text-red{
+    color: #e82e32;
+}
+
+/* BORDER */
+.border-red{
+    border-bottom: 5px solid #e82e32;
+}
+
+/* BOOTSTRAP NAVBAR CUSTOM */
+.navbar-light .navbar-toggler {
+	border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(232, 46, 50, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+button:focus {
+	outline: 0px;
+}
+
+/* SEARCH BAR STYLE */
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #00000065;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color: #e82e32;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e82e32;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+/* FOOTER */
+.bg-footer{
+    background-color: #242327;
+}
+
+.text-align-end{
+text-align: end;
+}
+
+.bg-red{
+background-color:#e82e32;
+width: 40px;
+height: 40px;
+border: solid 5px#E82E32;
+border-radius: 50%;
+} 
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    width: 100%;
+    height: 100%;
+}
+    
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 

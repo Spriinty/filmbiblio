@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <!-- ANIMATION -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <a class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" href="#"style="padding-bottom:20px;">
                         <div class="w-100" id="bg-2">
                             <div class="hoverfx">
                                 <div class="textbgbox">
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- AVENTURE-->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
                         <div class="w-100" id="bg-3">
