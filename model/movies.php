@@ -34,7 +34,7 @@ function test_input($data) {
         }   
     } 
     
-    if(isset($_POST['suicidesquad'])) {
+    else if(isset($_POST['suicidesquad'])) {
 
         
         $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
