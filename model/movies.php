@@ -6,7 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -45,7 +45,7 @@ function test_input($data) {
         $allimagedata1 = $reponsefilm1->fetchAll();
         foreach ($allimagedata1 as $key) {
             if (isset($key)) {
-                echo $key['titre'] ;
+                echo $key['titre'];
             }
         }
     } elseif(isset($_POST['diversionimage'])) {

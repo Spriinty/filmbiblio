@@ -19,8 +19,8 @@
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand m-0 text-white htext h2 font-weight-bold"
-                    href="#"><span>P</span>op<span>C</span>orn<img src="../media/popcorn.png" width="26" height="28"
+                <a class="navbar-brand m-0 text-white htext  font-weight-bold"
+                    href="#"><span>P</span>op<span>C</span>orn<img src="../media/popcorn.png" width="35" height="35"
                         alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,21 +53,24 @@
                         <h2 class="text-center text-white my-5 p-5">LISTE DES GENRES</h2>
                     </div>
                 </div>
-                <div class="row m-0">
+                <form action="" id="genre_form">
+                  <div class="row m-0">
                     <!-- Action -->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    
                         <div class="w-100" id="bg-1">
+                    
                             <div class="hoverfx">
                                 <!-- <img class="img-responsive w-100"
         src="../media/action.png" alt="#"> -->
                                 <div class="textbgbox">
-                                    <h3 class="font-weigth-bold">ACTION</h3>
+                                    <h3>ACTION</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- ANIMATION -->
-                    <a class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" href="#"style="padding-bottom:20px;">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
                         <div class="w-100" id="bg-2">
                             <div class="hoverfx">
                                 <div class="textbgbox">
@@ -75,7 +78,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                     <!-- AVENTURE-->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
                         <div class="w-100" id="bg-3">
@@ -111,7 +114,7 @@
                         <div class="w-100" id="bg-6">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3>COMEDIE<h3>
+                                    <h3>COMÉDIE<h3>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +124,7 @@
                         <div class="w-100" id="bg-7">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3>COMEDIE DRAMATIQUE<h3>
+                                    <h3>COMÉDIE DRAMATIQUE<h3>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +134,7 @@
                         <div class="w-100" id="bg-8">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3>COMEDIE MUSICALE<h3>
+                                    <h3>COMÉDIE MUSICALE<h3>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +144,7 @@
                         <div class="w-100" id="bg-9">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3 class="maginbottom">COMEDIE POLICIERE<h3>
+                                    <h3 class="maginbottom">COMÉDIE POLICIERE<h3>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +154,7 @@
                         <div class="w-100" id="bg-10">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3 class="maginbottom">COMEDIE ROMANTIQUE<h3>
+                                    <h3 class="maginbottom">COMÉDIE ROMANTIQUE<h3>
                                 </div>
                             </div>
                         </div>
@@ -212,12 +215,12 @@
                         <div class="w-100" id="bg-16">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3>EPOUVANTE<h3>
+                                    <h3>ÉPOUVANTE<h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- FANTASTIQUE-->
+                    <!-- FONTASTIQUE-->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
                         <div class="w-100" id="bg-17">
                             <div class="hoverfx">
@@ -332,7 +335,7 @@
                         <div class="w-100" id="bg-28">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3>TELEFILM<h3>
+                                    <h3>TÉLÉFILM<h3>
                                 </div>
                             </div>
                         </div>
@@ -362,7 +365,7 @@
                         <div class="w-100" id="bg-31">
                             <div class="hoverfx">
                                 <div class="textbgbox">
-                                    <h3>THÉATRE<h3>
+                                    <h3>THÉÂTRE<h3>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +380,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                  </div>
+                </form>
             </div>
         </div>
     </section>
@@ -404,10 +408,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
