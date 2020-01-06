@@ -14,30 +14,19 @@
     <div id="reponse"></div>
 
     <form action="" id="formImage" name="imageButton" method="POST">
-      <input type="text" id="suicidesquad" name="suicidesquad" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text" id="diversionimage" name="diversionimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text" id="instinctimage" name="instinctimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text" id="shaolinimage" name="shaolinimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text" id="chtisimage" name="chtisimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="chickenimage" name="chickenimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="mansimage" name="mansimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="rushimage" name="rushimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="driveimage" name="driveimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="whiplashimage" name="whiplashimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="getoutimage" name="getoutimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
-      <input type="text"  id="parasiteimage" name="parasiteimage" hidden>
-      <button type="submit"><img src="../media/musical.jpg" width="15%" alt=""></button>
+
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
+      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
     </form>
 
     <div id="reponseimage"></div>
@@ -122,6 +111,41 @@ datas = new FormData(myButtonFormImg);
     imgResponse.innerHTML = resultimage;
   })
 })
+
+
+
+
+
+
+
+
+
+let inptFormImg = document.querySelectorAll(".inpt-form-image");
+
+
+inptFormImg.forEach(function(pouet) {
+  pouet.addEventListener('click', function (e) {
+e.preventDefault()
+
+datas = new FormData();
+datas.append(pouet.name);
+console.log(pouet.name);
+
+// fetch('../model/movies.php', {
+// method: 'POST',
+// body: datas
+// }).then(function (thResponseimage) {
+// return thResponseimage.text();
+// }).then(function (resultimage) {
+// imgResponse = document.querySelector('#reponseimage');
+// imgResponse.innerHTML = resultimage;
+
+// })
+
+// })
+
+});
+
 
     </script>
 </body>
