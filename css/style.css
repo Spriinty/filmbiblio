@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Poppins&display=swap');
+html:root {
+  --red:#e82e32;
+  --white: white;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+}
+/* text */
+
+/* colors */
+.bg-header{
+    background-color:#2b2a2e;
+  
+}
+span{
+    color: #e82e32;
+}
+/* BOOTSTRAP NAVBAR CUSTOM */
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0) !important;
+    }
+    
+    .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(232, 46, 50, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    
+    button:focus {
+    outline: 0px;
+    }
+
+
+
+
+/*  HOVER  */
+.col-big{
+    position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width:20%;
+}
+
+.hoverfx {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border:unset 1px black;
+  border-radius: 10px;
+}
+
+
+ .textbgbox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: 1px black;
+  border-radius: 10px;
+}
+
+.hoverfx h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hoverfx:hover h3 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  margin:0px;
+}
+
+.hoverfx p.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background: rgba(13, 35, 55, 0.9);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  margin: 7px;
+}
+.maginbottom{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -10px;
+}
+.hoverfx .maginbottom {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+  
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .hoverfx:hover .maginbottom {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+    margin:0px;
+  }
+
+.hoverfx:hover p.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  color: #ffffff;
+}
+
+/* footer */
+.bg-footer{
+    background-color: #242327;
+    
+}
+.text-align-end{
+        text-align: end;
+    }
+.bg-red{
+    background-color:#e82e32;
+    width: 40px;
+    height: 40px;
+    border: solid 5px #e82e32;
+    border-radius: 50%;
+}
+/*******************BG-IMAGE**********************/
+#bg-1{
+  background-image: url(../media/action.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  border:unset 1px black;
+  border-radius: 10px;
+}
+
+#bg-2{
+  background-image: url(../media/animation.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  border:unset 1px black;
+  border-radius: 10px;
+}
+
+#bg-3{
+  background-image: url(../media/aventure.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  border:unset 1px black;
+  border-radius: 10px;
+}
+
+#bg-4{
+  background-image: url(../media/biog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  border:unset 1px black;
+  border-radius: 10px;
+}
+#bg-5{
+    background-image: url(../media/catastrophe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-6{
+    background-image: url(../media/comedie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-7{
+    background-image: url(../media/com-dram.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-8{
+    background-image: url(../media/com_musical.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-9{
+    background-image: url(../media/co_policier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-10{
+    background-image: url(../media/com_rom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-11{
+    background-image: url(../media/court_metrage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-12{
+    background-image: url(../media/dessin_animé.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-13{
+    background-image: url(../media/documentaire.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-14{
+    background-image: url(../media/drame.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-15{
+    background-image: url(../media/drama_psy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-16{
+    background-image: url(../media/epouvante.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-17{
+    background-image: url(../media/fantastique.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-18{
+    background-image: url(../media/musical.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-19{
+    background-image: url(../media/guerre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-20{
+    background-image: url(../media/historique.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-21{
+    background-image: url(../media/horreur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-22{
+    background-image: url(../media/policier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-23{
+    background-image: url(../media/politique.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-24{
+    background-image: url(../media/romnance.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-25{
+    background-image: url(../media/sc_fiction.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-26{
+    background-image: url(../media/serial.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-27{
+    background-image: url(../media/spctacle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-28{
+    background-image: url(../media/telefilm.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-29{
+    background-image: url(../media/thriller.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-30{
+    background-image: url(../media/western.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-31{
+    background-image: url(../media/theatre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }
+  #bg-32{
+    background-image: url(../media/sport.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    border:unset 1px black;
+    border-radius: 10px;
+  }

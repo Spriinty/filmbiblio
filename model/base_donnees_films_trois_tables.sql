@@ -10,7 +10,6 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -44,7 +43,7 @@ INSERT INTO `table_films_has_theme_genre` (`table_films_idfilm`, `theme_genre_id
 (3, 17),
 (3, 22),
 (3, 30),
-(4, 33),
+(4, 32),
 (5, 7),
 (5, 15),
 (6, 8),
