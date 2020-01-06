@@ -1,4 +1,4 @@
-   <pre><?php
+<?php
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -14,11 +14,10 @@ function test_input($data) {
     
     $base->exec("SET CHARACTER SET utf8");
 
-    
-    if (isset($_POST['search'])) {
+    if (isset($_POST['search']) && $_POST['search']!='') {
         $search=$_POST['search'];
 
-        $reponse1= $base->prepare("SELECT `titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$_POST['search']."%'");
+        $reponse1= $base->prepare("SELECT `idfilm`,`titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$search."%'");
 
         $searchStart=$search."%";
         $searchMid="%".$search."%";
@@ -28,7 +27,11 @@ function test_input($data) {
         $allData1=$reponse1->fetchAll();
         foreach ($allData1 as $key) {
             if (isset($key)) {
-                echo $key['titre'] ;
+                echo '<div class="mt-4 col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center">
+                <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                      src="./media/'.$key['idfilm'].'.jpg" alt="Affiche Chicken Run" width="241" height="332"
+                      name="$key"></a></p></div>';
+                echo  '<style>.formulairedisplay { display:none;}</style>';
             }
         }   
     } 
@@ -165,9 +168,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }else {
-        echo "rien";
     }
  
     $base = null;
-?><pre>
+?>

@@ -16,8 +16,7 @@
   <meta property="og:title" content="PopCorn : Votre annuaire de film">
   <meta property="og:description" content="La référence du 7ème Art">
   <meta property="og:site_name" content="Bakery">
-  <meta property="og:image"
-    content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./media/thumbnail.jpg">
+  <meta property="og:image" content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./media/thumbnail.jpg">
   <meta property="og:image:width" content="380">
   <meta property="og:image:height" content="380">
   <meta property="og:image:alt" content="facebook_partage">
@@ -26,8 +25,7 @@
   <meta name="twitter:title" content="PopCorn : Votre annuaire de film">
   <meta name="twitter:description" content="La référence du 7ème Art">
   <meta name="twitter:site" content="https://twitter.com/PopCornMovie">
-  <meta name="twitter:image"
-    content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./medias/thumbnail.jpg">
+  <meta name="twitter:image" content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./medias/thumbnail.jpg">
   <meta name="twitter:creator" content="PopCorn">
 
   <!-- Bootstrap CSS - MyCSS - Favicons -->
@@ -35,8 +33,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
   <link rel="stylesheet" href="style.css">
   <title>PopCorn</title>
   <favicon></favicon>
@@ -68,81 +66,97 @@
   <div class="container-fluid">
     <div class="container pt-5 h-100">
       <div class="d-flex justify-content-center pt-5 mt-5 h-100">
-        <div class="searchbar">
-          <input class="search_input" type="text" name="" placeholder="Rechercher...">
-          <a href="#" class="search_icon text-decoration-none"><i class="fas fa-search"></i></a>
-        </div>
+        <form action="" id="form">
+          <div class="searchbar">
+
+            <input class="search_input" type="search" name="search" id="search" name="" placeholder="Rechercher...">
+
+            <a href="#" class="search_icon text-decoration-none"><i class="fas fa-search"></i></a>
+
+          </div>
+        </form>
+
       </div>
     </div>
   </div>
+
   <!-- FILM LIST -->
   <form action="">
-  <div class="container-fluid pt-5 pb-5 text-center bg-bladerunner">
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 border-red">
-          <h2 class="text-white font-weight-bold text-uppercase mb-3">Recommandations</h2>
+    <div class="container-fluid pt-5 pb-5 text-center bg-bladerunner">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 border-red">
+            <h2 class="text-white font-weight-bold text-uppercase mb-3">Recommandations</h2>
+          </div>
         </div>
-      </div>
-      <div class="row mt-4 d-flex justify-content-center">
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/ChickenRun.jpg"
-                alt="Affiche Chicken Run" width="241" height="332" name="chickenimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/Whiplash.jpg"
-                alt="Affiche Whiplash" width="241" height="332" name="whiplashimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/Drive.jpg"
-                alt="Affiche Drive" width="241" height="332" name="driveimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/SuicideSquad.jpg"
-                alt="Affiche Suicide Squad" width="241" height="332" name="suicidesquad"></a></p>
-        </div>
-      </div>
-      <div class="row mt-4 d-flex justify-content-center">
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/BCLC.jpg"
-                alt="Affiche Bienvenue Chez Les Chtis" width="241" height="332" name="chtisimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/Parasite.jpg"
-                alt="Affiche Parasite" width="241" height="332" name="parasiteimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/LeMans66.jpg"
-                alt="Affiche Le Mans 66" width="241" height="332" name="mansimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/Diversion.jpg"
-                alt="Affiche Diversion" width="241" height="332" name="diversionimage"></a></p>
-        </div>
-      </div>
-      <div class="row mt-4 pb-5 d-flex justify-content-center">
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/ShaolinSoccer.jpg"
-                alt="Affiche Shaolin Soccer" width="241" height="332" name="shaolinimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/GetOut.jpg"
-                alt="Affiche Get Out" width="241" height="332" name="getoutimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/Rush.jpg"
-                alt="Affiche Rush" width="241" height="332" name="rushimage"></a></p>
-        </div>
-        <div class="col-12 col-sm-3 col-md-3 col-lg-2 text-center">
-          <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom" src="./media/InstinctDeSurvie.jpg"
-                alt="Affiche Instinct de Survie" width="241" height="332" name="instinctimage"></a></p>
+        <div id="reponse" class="row justify-content-left"></div>
+        <div class="row mt-4 d-flex justify-content-center ">
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/6.jpg" alt="Affiche Chicken Run" width="241" height="332" name="chickenimage"></a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/10.jpg" alt="Affiche Whiplash" width="241" height="332" name="whiplashimage"></a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/9.jpg" alt="Affiche Drive" width="241" height="332" name="driveimage"></a></p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/1.jpg" alt="Affiche Suicide Squad" width="241" height="332" name="suicidesquad"></a>
+            </p>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row mt-4 d-flex justify-content-center"> -->
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/5.jpg" alt="Affiche Bienvenue Chez Les Chtis" width="241" height="332"
+                  name="chtisimage"></a></p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/12.jpg" alt="Affiche Parasite" width="241" height="332" name="parasiteimage"></a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/7.jpg" alt="Affiche Le Mans 66" width="241" height="332" name="mansimage"></a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/2.jpg" alt="Affiche Diversion" width="241" height="332" name="diversionimage"></a>
+            </p>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row mt-4 pb-5 d-flex justify-content-center"> -->
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/4.jpg" alt="Affiche Shaolin Soccer" width="241" height="332" name="shaolinimage"></a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/11.jpg" alt="Affiche Get Out" width="241" height="332" name="getoutimage"></a></p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/8.jpg" alt="Affiche Rush" width="241" height="332" name="rushimage"></a></p>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+            <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                  src="./media/3.jpg" alt="Affiche Instinct de Survie" width="241" height="332"
+                  name="instinctimage"></a></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </form>
-
-  <div id="reponseimage" class="text-white"></div>
+  <div id="reponseimage"></div>
   <!-- FOOTER -->
   <footer>
     <div class="container-fluid bg-footer mt-0 p-3">
@@ -205,6 +219,35 @@
 
       })
     });
+
+    // on selectionne le formulaire
+    const myForm = document.querySelector('#form');
+    console.log(myForm);
+
+
+    // on affecte une ecoute d'évenement submit
+    myForm.addEventListener('keyup', function (e) {
+
+      //interrompre l'évenement par défaut
+      e.preventDefault();
+
+      //on selectionne la case de formulaire
+      nameInpt = document.querySelector('#search');
+
+      datas = new FormData(myForm);
+
+      datas.append('search', document.querySelector('#search').value);
+
+      fetch('../model/movies.php', {
+        method: 'POST',
+        body: datas
+      }).then(function (theResponse) {
+        return theResponse.text();
+      }).then(function (result) {
+        myDiv = document.querySelector('#reponse');
+        myDiv.innerHTML = result
+      })
+    })
   </script>
 </body>
 
