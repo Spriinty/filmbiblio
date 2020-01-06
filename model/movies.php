@@ -16,7 +16,7 @@ function test_input($data) {
 
     if (isset($_POST['search']) && $_POST['search']!='') {
         $search=$_POST['search'];
-
+        // SELECT * FROM `table_films` INNER JOIN table_films_has_theme_genre,genre WHERE table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre=genre.id
         $reponse1= $base->prepare("SELECT `idfilm`,`titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$search."%'");
 
         $searchStart=$search."%";
