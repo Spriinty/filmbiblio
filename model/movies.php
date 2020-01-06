@@ -6,7 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -15,7 +15,6 @@ function test_input($data) {
     $base->exec("SET CHARACTER SET utf8");
 
     
-    var_dump($_POST);
     if (isset($_POST['search'])) {
         $search=$_POST['search'];
 
@@ -34,7 +33,7 @@ function test_input($data) {
         }   
     } 
     
-    if(isset($_POST['suicidesquad'])) {
+    elseif(isset($_POST['suicidesquad'])) {
 
         
         $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
