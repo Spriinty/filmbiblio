@@ -13,10 +13,14 @@ function test_input($data) {
     }
     
     $base->exec("SET CHARACTER SET utf8");
-
+for ($i=1; $i <13 ; $i++) { 
+    var_dump($_POST[$i]);
+    echo $i;
+}
 
     if (isset($_POST['search']) && $_POST['search']!='') {
         $search=$_POST['search'];
+        
         $reponse1= $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `titre` LIKE '%".$_POST['search']."%' GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
         $searchStart=$search."%";
         $searchMid="%".$search."%";
@@ -45,11 +49,7 @@ function test_input($data) {
                 echo  '<style>.formulairedisplay { display:none;}</style>';
             }
         }   
-    } 
-    
-    elseif(isset($_POST['1'])) {
-
-        
+    } elseif(isset($_POST['1'])) {
         $reponsefilm1 = $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `idfilm`=1 GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
         
         $reponsefilm1->execute();
