@@ -62,13 +62,13 @@
                 <div class="collapse navbar-collapse justify-content-lg-end justify-content-xl-end" id="navbarNav">
                     <ul class="navbar-nav align-items-lg-end align-items-end ">
                         <li class="nav-item active">
-                            <a class="nav-link text-white" href="#"><span>G</span>enre</a>
+                            <a class="nav-link text-white" href="home.html"><span>A</span>cceuil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><span>R</span>éalisateur</a>
+                            <a class="nav-link text-white" href="genre.php"><span>G</span>enre</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link text-white" href="#"><span>D</span>ate de sortie</a>
+                            <a class="nav-link text-white" href="page404.php"><span>D</span>ate de sortie</a>
                         </li>
                     </ul>
                 </div>
