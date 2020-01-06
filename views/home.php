@@ -13,25 +13,76 @@
     </form>
     <div id="reponse"></div>
 
-    <form action="" id="formImage" name="imageButton" method="POST">
-
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-      <input type="image" src="../media/western.jpg" width="15%"  class="inpt-form-image">
-    </form>
+    <form action="">
+        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="suicidesquad" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="diversionimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="instinctimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="shaolinimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="chtisimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="chickenimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="mansimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="rushimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="driveimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="whiplashimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="getoutimage" >
+        
+        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="parasiteimage" >
+      </form>
+    
 
     <div id="reponseimage"></div>
+    <form action="" method="post" id="jpp">
+    <fieldset>
+        <p>
+            <label>Votre message :</label>
+            <textarea name="message"></textarea>
+        <p>
+        <p>
+            <input type="submit" name="previsualiser" value="Previsualiser" id="previ"/>
+            <input type="submit" name="envoyer" value="Envoyer" id="envoi"/>
+        </p>
+    </fieldset>
+</form>
+<?php
+if (isset($_POST['previsualiser'])) {
+ echo "previsu";
+ // j'ai cliqué sur « Prévisualiser »
 
+} elseif (isset($_POST['envoyer'])) {
+  echo "envoi";
+ // j'ai cliqué sur « Prévisualiser »
+
+} else {
+  echo "rien";
+ // comment t'es venu sur cette page ?
+
+}
+?>
 <script>
+formjpp=document.querySelector('#jpp')
+jpp.addEventListener('submit', function(e){
+ 
+  
+  previsu=document.querySelector('#previ')
+  console.log(previsu);
+  envoi=document.querySelector('#envoi')
+  console.log(envoi);
+if(previsu.click){
+  console.log('lol');
+  
+}
+})
+
 
 
     // on selectionne le formulaire
@@ -60,57 +111,38 @@
         myDiv.innerHTML = result
       })
 
-      // //on execute une promesse(ajax)
-      // fetch(`traitement.php?search=${nameInpt.value}`)
-      // .then(function(theresponse){
-      //     return theresponse.text();
-      // })
-      // .then(function(datas){
-
-
-      //     const myDiv = document.querySelector('#reponse');
-
-      //     //on met la reponse dans le paragraphe
-      //     myDiv.innerHTML = datas
-      // });
 
     })
 
 
-    
-    const myButtonFormImg = document.querySelector('#formImage');
+inptFormImg = document.querySelectorAll(".inpt-form-img");
+console.log(inptFormImg);
 
-// on affecte une ecoute d'évenement submit
-myButtonFormImg.addEventListener('click', function (e) {
+inptFormImg.forEach(function(pouet) {
+console.log(pouet);
 
-    //interrompre l'évenement par défaut
-    e.preventDefault();
-    
-    imgsSuicide =document.querySelector('#suicidesquad');
-    imgdiversion=document.querySelector('#diversionimage');
-    imginstinct =document.querySelector('#instinctimage');
-    imgshaolin =document.querySelector('#shaolinimage');
-    imgchtis =document.querySelector('#chtisimage');
-    imgchicken =document.querySelector('#chickenimage');
-    imgmans =document.querySelector('#mansimage');
-    imgrush =document.querySelector('#rushimage');
-    imgdrive =document.querySelector('#driveimage');
-    imgwhiplash =document.querySelector('#whiplashimage');
-    imggetout =document.querySelector('#getoutimage');
-    imgparasite =document.querySelector('#parasiteimage');
+  pouet.addEventListener('click', function (e) {
+    e.preventDefault()
+        //interrompre l'évenement par défaut
+        
 
-datas = new FormData(myButtonFormImg);
+    datas = new FormData();
+    datas.append(pouet.name, pouet.value);
 
-  fetch('../model/movies.php', {
-    method: 'POST',
-    body: datas
-  }).then(function (thResponseimage) {
-    return thResponseimage.text();
-  }).then(function (resultimage) {
-    imgResponse = document.querySelector('#reponseimage');
-    imgResponse.innerHTML = resultimage;
-  })
+    fetch('../model/movies.php', {
+      method: 'POST',
+      body: datas
+    }).then(function (thResponseimage) {
+      return thResponseimage.text();
+    }).then(function (resultimage) {
+      imgResponse = document.querySelector('#reponseimage');
+      imgResponse.innerHTML = resultimage;
+      
+    })
+  
 })
+});
+
 
 
 
