@@ -6,7 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -33,11 +33,7 @@ function test_input($data) {
         }   
     } 
     
-<<<<<<< HEAD
-    else if(isset($_POST['suicidesquad'])) {
-=======
     elseif(isset($_POST['suicidesquad'])) {
->>>>>>> 88a864dc85464ceaf6ae76137ddbb03d29fb066f
 
         
         $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
