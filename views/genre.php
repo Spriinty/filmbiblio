@@ -60,11 +60,13 @@
                     
                         <div class="w-100" id="bg-1">
                     
+                            
                             <div class="hoverfx">
+                                
                                 <!-- <img class="img-responsive w-100"
         src="../media/action.png" alt="#"> -->
                                 <div class="textbgbox">
-                                    <h3>ACTION</h3>
+                                    <input type="image" id="testInpt" src="" alt=""><h3>ACTION</h3>
                                 </div>
                             </div>
                         </div>
@@ -418,6 +420,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script>
+            imganim=document.querySelector(".hoverfx")
+            imganim.addEventListener('click',function(){
+                console.log('tu as clické image');
+                
+            })
+            textanim=document.querySelector(".textbgbox")
+            textanim.addEventListener('click',function(){
+                console.log('tu as clické text');
+            })
+            testInpt=document.querySelector("#testInpt")
+            testInpt.addEventListener('click',function(){
+                console.log('tu as clické sur linput');
+            })
+    //     const formGenre = document.querySelector('#genre_form');
+    // console.log(formGenre);
+
+
+    // // on affecte une ecoute d'évenement submit
+    // formGenre.addEventListener('keyup', function (e) {
+
+    //   //interrompre l'évenement par défaut
+    //   e.preventDefault();
+
+    //   //on selectionne la case de formulaire
+    //   nameInpt = document.querySelector('#search');
+
+    //   datas = new FormData(formGenre);
+
+      
+
+    //   fetch('../model/movies.php', {
+    //     method: 'POST',
+    //     body: datas
+    //   }).then(function (theResponse) {
+    //     return theResponse.text();
+    //   }).then(function (result) {
+    //     myDiv = document.querySelector('#reponse');
+    //     myDiv.innerHTML = result
+    //   })
+    // })
+    </script>
 </body>
 
 </html>
