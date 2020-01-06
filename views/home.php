@@ -13,7 +13,7 @@
     </form>
     <div id="reponse"></div>
 
-    
+    <form action="" id="recup">
       <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="suicidesquad" >
       
       <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="diversionimage" >
@@ -37,53 +37,13 @@
       <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="getoutimage" >
       
       <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="parasiteimage" >
-      
+    </form>
     
 
     <div id="reponseimage"></div>
-    <form action="" method="post" id="jpp">
-    <fieldset>
-        <p>
-            <label>Votre message :</label>
-            <textarea name="message"></textarea>
-        <p>
-        <p>
-            <input type="submit" name="previsualiser" value="Previsualiser" id="previ"/>
-            <input type="submit" name="envoyer" value="Envoyer" id="envoi"/>
-        </p>
-    </fieldset>
-</form>
-<?php
-if (isset($_POST['previsualiser'])) {
- echo "previsu";
- // j'ai cliqué sur « Prévisualiser »
+    
 
-} elseif (isset($_POST['envoyer'])) {
-  echo "envoi";
- // j'ai cliqué sur « Prévisualiser »
-
-} else {
-  echo "rien";
- // comment t'es venu sur cette page ?
-
-}
-?>
 <script>
-formjpp=document.querySelector('#jpp')
-jpp.addEventListener('submit', function(e){
- 
-  
-  previsu=document.querySelector('#previ')
-  console.log(previsu);
-  envoi=document.querySelector('#envoi')
-  console.log(envoi);
-if(previsu.click){
-  console.log('lol');
-  
-}
-})
-
-
 
     // on selectionne le formulaire
     const myForm = document.querySelector('#form');
