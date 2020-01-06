@@ -2,10 +2,43 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="La référence du 7ème Art">
+  <meta name="robots" content="all">
+  <meta name="keywords"
+    content="PopCorn, film, movie, critique, affiche, réalisateur, cinéma, oscar, golden globes, acteurs, actrices, salle, pellicule, recherche, annuaire, action, thriller, comedie, drame, horreur, spectacle">
+  <!-- Facebook -->
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="#">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PopCorn : Votre annuaire de film">
+  <meta property="og:description" content="La référence du 7ème Art">
+  <meta property="og:site_name" content="Bakery">
+  <meta property="og:image" content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./media/thumbnail.jpg">
+  <meta property="og:image:width" content="380">
+  <meta property="og:image:height" content="380">
+  <meta property="og:image:alt" content="facebook_partage">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PopCorn : Votre annuaire de film">
+  <meta name="twitter:description" content="La référence du 7ème Art">
+  <meta name="twitter:site" content="https://twitter.com/PopCornMovie">
+  <meta name="twitter:image" content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./medias/thumbnail.jpg">
+  <meta name="twitter:creator" content="PopCorn">
+
+  <!-- Bootstrap CSS - MyCSS - Favicons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+  <title>PopCorn</title>
+  <favicon></favicon>
+</head>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
