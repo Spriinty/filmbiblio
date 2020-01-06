@@ -45,7 +45,7 @@ function test_input($data) {
         $allimagedata1 = $reponsefilm1->fetchAll();
         foreach ($allimagedata1 as $key) {
             if (isset($key)) {
-                echo $key['titre'] ;
+                echo $key['titre'];
             }
         }
     } elseif(isset($_POST['diversionimage'])) {
