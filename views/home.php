@@ -13,77 +13,37 @@
     </form>
     <div id="reponse"></div>
 
-    <form action="">
-        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="suicidesquad" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="diversionimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="instinctimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="shaolinimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="chtisimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="chickenimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="mansimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="rushimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="driveimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="whiplashimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="getoutimage" >
-        
-        <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="parasiteimage" >
-      </form>
+    <form action="" id="recup">
+      <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="suicidesquad" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="diversionimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="instinctimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="shaolinimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%" class="inpt-form-img" name="chtisimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="chickenimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="mansimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="rushimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="driveimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="whiplashimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="getoutimage" >
+      
+      <input type="image" src="../media/musical.jpg" width="15%"  class="inpt-form-img" name="parasiteimage" >
+    </form>
     
 
     <div id="reponseimage"></div>
-    <form action="" method="post" id="jpp">
-    <fieldset>
-        <p>
-            <label>Votre message :</label>
-            <textarea name="message"></textarea>
-        <p>
-        <p>
-            <input type="submit" name="previsualiser" value="Previsualiser" id="previ"/>
-            <input type="submit" name="envoyer" value="Envoyer" id="envoi"/>
-        </p>
-    </fieldset>
-</form>
-<?php
-if (isset($_POST['previsualiser'])) {
- echo "previsu";
- // j'ai cliqué sur « Prévisualiser »
+    
 
-} elseif (isset($_POST['envoyer'])) {
-  echo "envoi";
- // j'ai cliqué sur « Prévisualiser »
-
-} else {
-  echo "rien";
- // comment t'es venu sur cette page ?
-
-}
-?>
 <script>
-formjpp=document.querySelector('#jpp')
-jpp.addEventListener('submit', function(e){
- 
-  
-  previsu=document.querySelector('#previ')
-  console.log(previsu);
-  envoi=document.querySelector('#envoi')
-  console.log(envoi);
-if(previsu.click){
-  console.log('lol');
-  
-}
-})
-
-
 
     // on selectionne le formulaire
     const myForm = document.querySelector('#form');
@@ -110,8 +70,6 @@ if(previsu.click){
         myDiv = document.querySelector('#reponse');
         myDiv.innerHTML = result
       })
-
-
     })
 
 
@@ -141,41 +99,6 @@ console.log(pouet);
     })
   
 })
-});
-
-
-
-
-
-
-
-
-
-
-let inptFormImg = document.querySelectorAll(".inpt-form-image");
-
-
-inptFormImg.forEach(function(pouet) {
-  pouet.addEventListener('click', function (e) {
-e.preventDefault()
-
-datas = new FormData();
-datas.append(pouet.name);
-console.log(pouet.name);
-
-// fetch('../model/movies.php', {
-// method: 'POST',
-// body: datas
-// }).then(function (thResponseimage) {
-// return thResponseimage.text();
-// }).then(function (resultimage) {
-// imgResponse = document.querySelector('#reponseimage');
-// imgResponse.innerHTML = resultimage;
-
-// })
-
-// })
-
 });
 
 
