@@ -1,4 +1,4 @@
- <?php
+<?php
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -27,19 +27,28 @@ function test_input($data) {
         $allData1=$reponse1->fetchAll();
         foreach ($allData1 as $key) {
             if (isset($key)) {
-                
-                echo '<div class="col-12 mt-4 col-sm-3 col-md-3 col-lg-2 text-center">
-                <p><a href="#"><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
-                      src="./media/'.$key['idfilm'].'.jpg" alt="Affiche Chicken Run" width="241" height="332"
-                      name="$key"></a>
-                </p>
-              </div>';
-              
+                echo '
+                <div class="row mt-4 col-12 text-center">
+                    <div class="col-3 justify-content-left">
+                        <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+                            src="./media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
+                            name="'.$key['idfilm'].'">
+                        </p>
+                    </div>
+                    <div class="col-9 text-left">
+                        <div><p>Titre du Film: '.$key['titre'].'</p></div>
+                        <div><p>Année de sortie: '.$key['anneesortie'].'</p></div>
+                        <div><p>Réalisateur: '.$key['realisateur'].'</p></div>
+                        <div><p>Genres: '.$key['genre'].'</p></div>
+                        <div><p>Résumé: '.$key['description'].'</p></div>
+                    </div>
+                </div>';
+                echo  '<style>.formulairedisplay { display:none;}</style>';
             }
         }   
     } 
     
-    elseif(isset($_POST['suicidesquad'])) {
+    elseif(isset($_POST['1'])) {
 
         
         $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
@@ -51,7 +60,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    } elseif(isset($_POST['diversionimage'])) {
+    } elseif(isset($_POST['2'])) {
         $reponsefilm2 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '2'");
         
         $reponsefilm2->execute();
@@ -61,7 +70,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }elseif(isset($_POST['instinctimage'])) {
+    }elseif(isset($_POST['3'])) {
 
         
         $reponsefilm3 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '3'");
@@ -73,7 +82,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    } elseif(isset($_POST['shaolinimage'])) {
+    } elseif(isset($_POST['4'])) {
         $reponsefilm4 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '4'");
         
         $reponsefilm4->execute();
@@ -83,7 +92,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }elseif(isset($_POST['chtisimage'])) {
+    }elseif(isset($_POST['5'])) {
 
         
         $reponsefilm5 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '5'");
@@ -95,7 +104,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    } elseif(isset($_POST['chickenimage'])) {
+    } elseif(isset($_POST['6'])) {
         $reponsefilm6 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '6'");
         
         $reponsefilm6->execute();
@@ -105,7 +114,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }elseif(isset($_POST['mansimage'])) {
+    }elseif(isset($_POST['7'])) {
 
         
         $reponsefilm7 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '7'");
@@ -117,7 +126,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    } elseif(isset($_POST['rushimage'])) {
+    } elseif(isset($_POST['8'])) {
         $reponsefilm8 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '8'");
         
         $reponsefilm8->execute();
@@ -127,7 +136,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }elseif(isset($_POST['driveimage'])) {
+    }elseif(isset($_POST['9'])) {
 
         
         $reponsefilm9 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '9'");
@@ -139,7 +148,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    } elseif(isset($_POST['whiplashimage'])) {
+    } elseif(isset($_POST['10'])) {
         $reponsefilm10 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '10'");
         
         $reponsefilm10->execute();
@@ -149,7 +158,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }elseif(isset($_POST['getoutimage'])) {
+    }elseif(isset($_POST['11'])) {
 
         
         $reponsefilm11 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '11'");
@@ -161,7 +170,7 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    } elseif(isset($_POST['parasiteimage'])) {
+    } elseif(isset($_POST['12'])) {
         $reponsefilm12 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '12'");
         
         $reponsefilm12->execute();
@@ -171,8 +180,6 @@ function test_input($data) {
                 echo $key['titre'] ;
             }
         }
-    }else {
-        echo "rien";
     }
  
     $base = null;
