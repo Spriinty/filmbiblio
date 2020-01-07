@@ -86,10 +86,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
                         <div class="w-100" id="bg-1">
                             <div class="hoverfx">
-                                <!-- <img class="img-responsive w-100"
-        src="../media/action.png" alt="#"> -->
                                 <div class="textbgbox">
                                     <h3>ACTION</h3>
+                                    <input type="hidden" id="action" name="genre[]">
                                 </div>
                             </div>
                         </div>
@@ -100,6 +99,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>ANIMATION</h3>
+                                    <input type="hidden" id="animation" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -110,6 +110,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>AVENTURE</h3>
+                                    <input type="hidden" id="aventure" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -120,6 +121,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>BIOPIC<h3>
+                                    <input type="hidden" id="biopic" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -130,6 +132,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>CATASTROPHE<h3>
+                                    <input type="hidden" id="catastrophe" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -140,6 +143,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COMÉDIE<h3>
+                                    <input type="hidden" id="comedie" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -150,6 +154,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COMÉDIE DRAMATIQUE<h3>
+                                    <input type="hidden" id="comediedramatique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -160,6 +165,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COMÉDIE MUSICALE<h3>
+                                    <input type="hidden" id="comediemusicale" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -170,6 +176,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3 class="maginbottom">COMÉDIE POLICIERE<h3>
+                                    <input type="hidden" id="comediepoliciere" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -180,6 +187,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3 class="maginbottom">COMÉDIE ROMANTIQUE<h3>
+                                    <input type="hidden" id="comedieromantique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -190,6 +198,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COURT MÉTRAGE<h3>
+                                    <input type="hidden" id="courtmetrage" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -200,6 +209,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>DESSIN ANIMÉ<h3>
+                                    <input type="hidden" id="dessinanime" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -210,6 +220,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>DOCUMENTAIRE<h3>
+                                    <input type="hidden" id="documentaire" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -220,6 +231,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>DRAME<h3>
+                                    <input type="hidden" id="drame" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -231,6 +243,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3 class="maginbottom">DRAME PSYCHOLOGIQUE<h3>
+                                    <input type="hidden" id="dramepsychologique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -241,16 +254,18 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>ÉPOUVANTE<h3>
+                                    <input type="hidden" id="epouvante" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- FONTASTIQUE-->
+                    <!-- FANTASTIQUE-->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
                         <div class="w-100" id="bg-17">
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>FANTASTIQUE<h3>
+                                    <input type="hidden" id="fantastique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -261,6 +276,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>FILM MUSICAL<h3>
+                                    <input type="hidden" id="filmmusical" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -271,6 +287,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>GUERRE<h3>
+                                    <input type="hidden" id="guerre" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -281,6 +298,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>HISTORIQUE<h3>
+                                    <input type="hidden" id="historique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -291,6 +309,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>HORREUR<h3>
+                                    <input type="hidden" id="horreur" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -301,6 +320,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>POLICIER<h3>
+                                    <input type="hidden" id="policier" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -311,6 +331,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>POLITIQUE<h3>
+                                    <input type="hidden" id="politique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -321,6 +342,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>ROMANCE<h3>
+                                    <input type="hidden" id="romance" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -331,6 +353,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>SCIENCE FICTION<h3>
+                                    <input type="hidden" id="sciencefiction" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -341,6 +364,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>SERIAL<h3>
+                                    <input type="hidden" id="serial" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -351,6 +375,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>SPECTACLE<h3>
+                                    <input type="hidden" id="spectacle" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -361,6 +386,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>TÉLÉFILM<h3>
+                                    <input type="hidden" id="telefilm" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -371,6 +397,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>THRILLER<h3>
+                                    <input type="hidden" id="thriller" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -381,6 +408,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>WESTERN<h3>
+                                    <input type="hidden" id="western" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -391,6 +419,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>THÉÂTRE<h3>
+                                    <input type="hidden" id="theatre" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -401,6 +430,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>SPORT<h3>
+                                    <input type="hidden" id="sport" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -443,6 +473,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script>
+            imganim=document.querySelector(".hoverfx")
+            imganim.addEventListener('click',function(){
+                console.log('tu as clické image');
+                
+            })
+            textanim=document.querySelector(".textbgbox")
+            textanim.addEventListener('click',function(){
+                console.log('tu as clické text');
+            })
+            testInpt=document.querySelector("#testInpt")
+            testInpt.addEventListener('click',function(){
+                console.log('tu as clické sur linput');
+            })
+    //     const formGenre = document.querySelector('#genre_form');
+    // console.log(formGenre);
+
+
+    // // on affecte une ecoute d'évenement submit
+    // formGenre.addEventListener('keyup', function (e) {
+
+    //   //interrompre l'évenement par défaut
+    //   e.preventDefault();
+
+    //   //on selectionne la case de formulaire
+    //   nameInpt = document.querySelector('#search');
+
+    //   datas = new FormData(formGenre);
+
+      
+
+    //   fetch('../model/movies.php', {
+    //     method: 'POST',
+    //     body: datas
+    //   }).then(function (theResponse) {
+    //     return theResponse.text();
+    //   }).then(function (result) {
+    //     myDiv = document.querySelector('#reponse');
+    //     myDiv.innerHTML = result
+    //   })
+    // })
+    </script>
 </body>
 
 </html>
