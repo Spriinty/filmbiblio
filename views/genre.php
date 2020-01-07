@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand m-0 text-white htext  font-weight-bold"
-                    href="#"><span>P</span>op<span>C</span>orn<img src="../media/popcorn.png" width="35" height="35"
+                    href="home.html"><span>P</span>op<span>C</span>orn<img src="../media/popcorn.png" width="35" height="35"
                         alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
