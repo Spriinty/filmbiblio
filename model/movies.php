@@ -6,8 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:localhost; dbname=testcine', 'root', 'online@2017');
-        // $base = new PDO('mysql:host=localhost; dbname=quentinp364_testcine', 'quentinp364', '6FbZ1+ZEyQH72A==');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -47,7 +46,6 @@ function test_input($data) {
         $post = $val;   
     if(isset($post)) {
         
-        
         $reponsefilm1 = $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `idfilm`=$post GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
         
         $reponsefilm1->execute();
@@ -74,5 +72,6 @@ function test_input($data) {
         }
     }
 }
-$base = null;
+
+    $base = null;
 ?>
