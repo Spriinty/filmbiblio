@@ -84,9 +84,7 @@
                   <div class="row m-0">
                     <!-- Action -->
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
-                    
                         <div class="w-100" id="bg-1">
-                    
                             <div class="hoverfx">
                                 <!-- <img class="img-responsive w-100"
         src="../media/action.png" alt="#"> -->

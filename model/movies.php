@@ -18,7 +18,6 @@ function test_input($data) {
         $search=$_POST['search'];
 
         $reponse1= $base->prepare("SELECT `idfilm`,`titre`,`description`,`anneesortie`,`realisateur` FROM `table_films` WHERE `titre` LIKE '%".$search."%'");
-        $reponse_genre = $base->prepare("SELECT `id_genre`,`genre` FROM `theme_genre`");
         $searchStart=$search."%";
         $searchMid="%".$search."%";
         $searchEnd="%".$search;
@@ -44,8 +43,6 @@ function test_input($data) {
     } 
     
     elseif(isset($_POST['suicidesquad'])) {
-
-        
         $reponsefilm1 = $base->prepare("SELECT * FROM `table_films` WHERE idfilm = '1'");
         
         $reponsefilm1->execute();
