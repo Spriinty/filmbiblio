@@ -553,11 +553,12 @@ span{
   }
   75% {
     color: #EFFAB4;
-  }s
+  }
   100% {
     color: #D1F2A5;
   }
 }
+
 @keyframes colordancing2 {
   0% {
     color: #FFC48C;
