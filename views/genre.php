@@ -2,10 +2,43 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="La référence du 7ème Art">
+  <meta name="robots" content="all">
+  <meta name="keywords"
+    content="PopCorn, film, movie, critique, affiche, réalisateur, cinéma, oscar, golden globes, acteurs, actrices, salle, pellicule, recherche, annuaire, action, thriller, comedie, drame, horreur, spectacle">
+  <!-- Facebook -->
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="#">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PopCorn : Votre annuaire de film">
+  <meta property="og:description" content="La référence du 7ème Art">
+  <meta property="og:site_name" content="Bakery">
+  <meta property="og:image" content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./media/thumbnail.jpg">
+  <meta property="og:image:width" content="380">
+  <meta property="og:image:height" content="380">
+  <meta property="og:image:alt" content="facebook_partage">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PopCorn : Votre annuaire de film">
+  <meta name="twitter:description" content="La référence du 7ème Art">
+  <meta name="twitter:site" content="https://twitter.com/PopCornMovie">
+  <meta name="twitter:image" content="http://rayans.promo-vesoul33.codeur.online/annuaire-films/./medias/thumbnail.jpg">
+  <meta name="twitter:creator" content="PopCorn">
+
+  <!-- Bootstrap CSS - MyCSS - Favicons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+  <title>PopCorn</title>
+  <favicon></favicon>
+</head>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,31 +50,25 @@
 
     <!-- HEADER -->
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand m-0 text-white htext  font-weight-bold"
-                    href="#"><span>P</span>op<span>C</span>orn<img src="../media/popcorn.png" width="35" height="35"
-                        alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-lg-end justify-content-xl-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-end align-items-end ">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#"><span>G</span>enre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><span>R</span>éalisateur</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#"><span>D</span>ate de sortie</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand m-0 text-white htext h2 font-weight-bold" href="home.html"><span class="text-red">P</span>op<span
+          class="text-red">C</span>orn<img src="media/popcorn.png" width="26" height="28" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-white font-weight-bold text-right" href="home.html"><span
+              class="text-red">A</span>ccueil</a>
+          <a class="nav-item nav-link text-white font-weight-bold text-right" href="genre.php"><span
+              class="text-red">G</span>enre</a>
+          <a class="nav-item nav-link text-white font-weight-bold text-right" href="page404.php"><span
+              class="text-red">D</span>ate de sortie</a>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
     <!-- fin header -->
     <!-- section -->
     <section>
@@ -50,7 +77,7 @@
             <div class="container m-auto p-5">
                 <div class="row my-0">
                     <div class="col">
-                        <h2 class="text-center text-white my-5 p-5">LISTE DES GENRES</h2>
+                        <h2 class="text-center text-white mb-5 p-5 font-weight-bold text-center">LISTE DES GENRES</h2>
                     </div>
                 </div>
                 <form action="" id="genre_form">
@@ -63,6 +90,7 @@
         src="../media/action.png" alt="#"> -->
                                 <div class="textbgbox">
                                     <h3>ACTION</h3>
+                                    <input type="hidden" id="action" name="genre[]">
                                 </div>
                             </div>
                         </div>
@@ -73,6 +101,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>ANIMATION</h3>
+                                    <input type="hidden" id="animation" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -83,6 +112,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>AVENTURE</h3>
+                                    <input type="hidden" id="aventure" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -93,6 +123,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>BIOPIC<h3>
+                                    <input type="hidden" id="biopic" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -103,6 +134,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>CATASTROPHE<h3>
+                                    <input type="hidden" id="catastrophe" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -113,6 +145,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COMÉDIE<h3>
+                                    <input type="hidden" id="comedie" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -123,6 +156,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COMÉDIE DRAMATIQUE<h3>
+                                    <input type="hidden" id="comediedramatique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -133,6 +167,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3>COMÉDIE MUSICALE<h3>
+                                    <input type="hidden" id="comediemusicale" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -143,6 +178,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3 class="maginbottom">COMÉDIE POLICIERE<h3>
+                                    <input type="hidden" id="comediepoliciere" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -153,6 +189,7 @@
                             <div class="hoverfx">
                                 <div class="textbgbox">
                                     <h3 class="maginbottom">COMÉDIE ROMANTIQUE<h3>
+                                    <input type="hidden" id="comedieromantique" name="genre[]" class="inpt-genre-img">
                                 </div>
                             </div>
                         </div>
@@ -416,6 +453,48 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script>
+            imganim=document.querySelector(".hoverfx")
+            imganim.addEventListener('click',function(){
+                console.log('tu as clické image');
+                
+            })
+            textanim=document.querySelector(".textbgbox")
+            textanim.addEventListener('click',function(){
+                console.log('tu as clické text');
+            })
+            testInpt=document.querySelector("#testInpt")
+            testInpt.addEventListener('click',function(){
+                console.log('tu as clické sur linput');
+            })
+    //     const formGenre = document.querySelector('#genre_form');
+    // console.log(formGenre);
+
+
+    // // on affecte une ecoute d'évenement submit
+    // formGenre.addEventListener('keyup', function (e) {
+
+    //   //interrompre l'évenement par défaut
+    //   e.preventDefault();
+
+    //   //on selectionne la case de formulaire
+    //   nameInpt = document.querySelector('#search');
+
+    //   datas = new FormData(formGenre);
+
+      
+
+    //   fetch('../model/movies.php', {
+    //     method: 'POST',
+    //     body: datas
+    //   }).then(function (theResponse) {
+    //     return theResponse.text();
+    //   }).then(function (result) {
+    //     myDiv = document.querySelector('#reponse');
+    //     myDiv.innerHTML = result
+    //   })
+    // })
+    </script>
 </body>
 
 </html>
