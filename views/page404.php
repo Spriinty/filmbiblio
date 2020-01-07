@@ -52,7 +52,8 @@
 
 <body class="bg-header">
 
-  <!-- fin header -->
+  <!--  header -->
+  <main>
   <div class="container-fluid h-70vh mb-5">
     <div class="container">
       <div class="row justify-content-center pb-5">
@@ -73,6 +74,7 @@
       </div>
     </div>
   </div>
+</section>
   <!-- fin main -->
 
   <!-- Optional JavaScript -->
