@@ -553,7 +553,7 @@ span{
   }
   75% {
     color: #EFFAB4;
-  }
+  }s
   100% {
     color: #D1F2A5;
   }
@@ -598,7 +598,7 @@ a.more-link {
     background-color: #92a4ad;
     padding: 10px 15px;
     border-radius: 0;
-    color: #416475;
+   
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -611,13 +611,17 @@ a.more-link {
     font-weight: 400; 
     color:#e82e32;
     text-decoration: none; 
+
 }
-.box{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform : translate(-50% ,-50%);
+.btn-link:active{
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+    transform:translateY(-1px);
   }
+  .btn-link:hover{
+    box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+    transform : translateY(-3px);
+ }
+
   
   .btn:link,
   .btn:visited{
