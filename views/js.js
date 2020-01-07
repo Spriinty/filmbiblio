@@ -4,9 +4,6 @@ console.log(inptFormImg);
 
 inptFormImg.forEach(function(imageclic){
     imageclic.addEventListener('click', function(clicimage){
-        clicimage.addEventListener('dblclick', function(){
-
+            window.scrollTo(0,document.body.scrollHeight);
         });
-        window.scrollTo(0,document.body.scrollHeight);
     })
-})
