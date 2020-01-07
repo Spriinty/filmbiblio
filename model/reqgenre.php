@@ -12,7 +12,7 @@ function test_input($data) {
         die('Erreur '.$e->getMessage());
     }
     $base->exec("SET CHARACTER SET utf8");
-    
+    var_dump($_POST);
 foreach ( $_POST as $genre  )  {   
     foreach($genre as $test => $val) {
         $test=$val;

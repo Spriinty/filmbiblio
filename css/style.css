@@ -460,6 +460,24 @@ span{
   font-weight: 800;
   margin: 20px 15px;
 }
+@media (max-width: 576px) { 
+  .error-container {
+    text-align: center;
+    font-size: 2900px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    margin: 20px 15px;
+}
+}
+@media (max-width: 767.98px) { 
+  .error-container {
+    text-align: center;
+    font-size: 360px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    margin: 20px 15px;
+}
+ }
 .error-container > span {
   display: inline-block;
   line-height: 0.7;
@@ -553,11 +571,12 @@ span{
   }
   75% {
     color: #EFFAB4;
-  }s
+  }
   100% {
     color: #D1F2A5;
   }
 }
+
 @keyframes colordancing2 {
   0% {
     color: #FFC48C;
@@ -693,3 +712,7 @@ a.more-link {
       transform:translateY(0);
     }
   }
+
+
+
+  
