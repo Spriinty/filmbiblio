@@ -12,6 +12,7 @@ function test_input($data) {
         die('Erreur '.$e->getMessage());
     }
     $base->exec("SET CHARACTER SET utf8");
+    
 foreach ( $_POST as $genre  )  {   
     foreach($genre as $test => $val) {
         $test=$val;
@@ -41,7 +42,12 @@ foreach ( $_POST as $genre  )  {
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <h2 class="text-white text-center font-weight-bold mb-3">'.$key['genre'].'</h2>
                         </div>
-                        </div>';
+                        </div>
+                        <div class="row mt-4 d-flex justify-content-center ">
+                        <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-3 text-center formulairedisplay">
+                          <h4 class="text-white">'.$key['newtitle'].'</4>
+                          </div></div>
+                        ';
                     
                     
                     
