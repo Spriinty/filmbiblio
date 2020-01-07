@@ -6,7 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -17,10 +17,6 @@ function test_input($data) {
         
 
     $reponse1= $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `titre` LIKE '%".$_POST['search']."%' GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
-    // $searchStart=$search."%";
-    // $searchMid="%".$search."%";
-    // $searchEnd="%".$search;
-    // $reponse1->bindParam(':searchStart',$searchStart, PDO::PARAM_STR);
     $reponse1->execute();
     $allData1=$reponse1->fetchAll();
         foreach ($allData1 as $key) {
@@ -41,11 +37,11 @@ function test_input($data) {
                         <div><p>Résumé: '.$key['description'].'</p></div>
                     </div>
                 </div>';
-                echo  '<style>.formulairedisplay { display:none;}</style>';
+                // echo  '<style>.formulairedisplay { display:none;}</style>';
             }
         }
     }else{
-        echo  '<style>.formulairedisplay { display:block;}</style>';
+        // echo  '<style>.formulairedisplay { display:block;}</style>';
     } 
     foreach ( $_POST as $post => $val )  {            
         $post = $val;   
