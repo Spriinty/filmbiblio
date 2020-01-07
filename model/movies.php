@@ -13,10 +13,10 @@ function test_input($data) {
     }
     
     $base->exec("SET CHARACTER SET utf8");
-for ($i=1; $i <13 ; $i++) { 
-    var_dump($_POST[$i]);
-    echo $i;
-}
+// for ($i=1; $i <13 ; $i++) { 
+//     var_dump($_POST[$i]);
+//     echo $i;
+// }
 
     if (isset($_POST['search']) && $_POST['search']!='') {
         $search=$_POST['search'];
@@ -384,32 +384,32 @@ for ($i=1; $i <13 ; $i++) {
     
     
     
-    if(isset($_POST['12'])) {
-        $reponsefilm12 = $base->prepare("SELECT `genre`, GROUP_CONCAT(`titre`) AS newtitle FROM `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id GROUP BY genre ORDER BY `table_films`.`idfilm` ASC");
+    // if(isset($_POST['12'])) {
+    //     $reponsefilm12 = $base->prepare("SELECT `genre`, GROUP_CONCAT(`titre`) AS newtitle FROM `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id  GROUP BY genre ORDER BY `table_films`.`idfilm` ASC");
         
-        $reponsefilm12->execute();
-        $allimagedata12 = $reponsefilm12->fetchAll();
-        foreach ($allimagedata12 as $key) {
-            if (isset($key)) {
-                echo '
-                <div class="row mt-4 col-12 text-center text-white">
-                    <div class="col-3 justify-content-left">
-                        <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
-                            src="./media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
-                            name="'.$key['idfilm'].'">
-                        </p>
-                    </div>
-                    <div class="col-9 text-left">
-                        <div><p>Titre du Film: '.$key['titre'].'</p></div>
-                        <div><p>Année de sortie: '.$key['anneesortie'].'</p></div>
-                        <div><p>Réalisateur: '.$key['realisateur'].'</p></div>
-                        <div><p>Genres: '.$key['newgenre'].'</p></div>
-                        <div><p>Résumé: '.$key['description'].'</p></div>
-                    </div>
-                </div>';
-            }
-        }
-    }
+    //     $reponsefilm12->execute();
+    //     $allimagedata12 = $reponsefilm12->fetchAll();
+    //     foreach ($allimagedata12 as $key) {
+    //         if (isset($key)) {
+    //             echo '
+    //             <div class="row mt-4 col-12 text-center text-white">
+    //                 <div class="col-3 justify-content-left">
+    //                     <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
+    //                         src="./media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
+    //                         name="'.$key['idfilm'].'">
+    //                     </p>
+    //                 </div>
+    //                 <div class="col-9 text-left">
+    //                     <div><p>Titre du Film: '.$key['titre'].'</p></div>
+    //                     <div><p>Année de sortie: '.$key['anneesortie'].'</p></div>
+    //                     <div><p>Réalisateur: '.$key['realisateur'].'</p></div>
+    //                     <div><p>Genres: '.$key['newgenre'].'</p></div>
+    //                     <div><p>Résumé: '.$key['description'].'</p></div>
+    //                 </div>
+    //             </div>';
+    //         }
+    //     }
+    // }
     
  // SELECT * FROM `table_films` INNER JOIN table_films_has_theme_genre,genre WHERE table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre=genre.id
         
