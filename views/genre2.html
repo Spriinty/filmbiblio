@@ -1,0 +1,372 @@
+<section>
+
+    <div class="container-fluid  mb-0 p-0">
+        <div class="container m-auto p-5">
+            <div class="row my-0">
+                <div class="col">
+                    <h2 class="text-center text-white mb-5 p-5 font-weight-bold text-center">LISTE DES GENRES</h2>
+                </div>
+            </div>
+            <form action="" id="genre_form">
+              <div class="row m-0">
+                <!-- Action -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-1">
+                        <div class="hoverfx">
+                            <!-- <img class="img-responsive w-100"
+    src="../media/action.png" alt="#"> -->
+                            <div class="textbgbox">
+                                <h3>ACTION</h3>
+                                <input type="hidden" id="action" name="genre[]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ANIMATION -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-2">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>ANIMATION</h3>
+                                <input type="hidden" id="animation" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AVENTURE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-3">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>AVENTURE</h3>
+                                <input type="hidden" id="aventure" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BIOPIC-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-4">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>BIOPIC<h3>
+                                <input type="hidden" id="biopic" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CATASTROPHE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-5">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>CATASTROPHE<h3>
+                                <input type="hidden" id="catastrophe" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comdedie-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-6">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>COMÉDIE<h3>
+                                <input type="hidden" id="comedie" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comdedie DRAMATIQUE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-7">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>COMÉDIE DRAMATIQUE<h3>
+                                <input type="hidden" id="comediedramatique" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comdedie MUSICALE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-8">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>COMÉDIE MUSICALE<h3>
+                                <input type="hidden" id="comediemusicale" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comdedie POLICIERE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-9">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3 class="maginbottom">COMÉDIE POLICIERE<h3>
+                                <input type="hidden" id="comediepoliciere" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comdedie ROMANTIQUE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-10">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3 class="maginbottom">COMÉDIE ROMANTIQUE<h3>
+                                <input type="hidden" id="comedieromantique" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- COURT METRAGE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-11">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>COURT MÉTRAGE<h3>
+                                <input type="hidden" id="courtmetrage" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DESSIN ANIME-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-12">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>DESSIN ANIMÉ<h3>
+                                <input type="hidden" id="dessinanime" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DOCUMENTAIRE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-13">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>DOCUMENTAIRE<h3>
+                                <input type="hidden" id="documentaire" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DRAME-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100 hoverfx" id="bg-14">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>DRAME<h3>
+                                <input type="hidden" id="drame" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DRAME PSYCHOLOGIQUE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-15">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3 class="maginbottom">DRAME PSYCHOLOGIQUE<h3>
+                                <input type="hidden" id="dramepsychologique" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EOUVANTE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-16">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>ÉPOUVANTE<h3>
+                                <input type="hidden" id="epouvante" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FANTASTIQUE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-17">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>FANTASTIQUE<h3>
+                                <input type="hidden" id="fantastique" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FILM MUSICAL-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-18">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>FILM MUSICAL<h3>
+                                <input type="hidden" id="filmmusical" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- GUERRE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-19">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>GUERRE<h3>
+                                <input type="hidden" id="guerre" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HISTORIQUE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-20">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>HISTORIQUE<h3>
+                                <input type="hidden" id="historique" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HORREUR-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-21">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>HORREUR<h3>
+                                <input type="hidden" id="horreur" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- POLICIER-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-22">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>POLICIER<h3>
+                                <input type="hidden" id="policier" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- POLITIQUE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-23">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>POLITIQUE<h3>
+                                <input type="hidden" id="politique" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROMANCE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-24">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>ROMANCE<h3>
+                                <input type="hidden" id="romance" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SCIENCE FICTION-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-25">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>SCIENCE FICTION<h3>
+                                <input type="hidden" id="sciencefiction" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SERIAL-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-26">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>SERIAL<h3>
+                                <input type="hidden" id="serial" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SPECTACLE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-27">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>SPECTACLE<h3>
+                                <input type="hidden" id="spectacle" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TELEFILM-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-28">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>TÉLÉFILM<h3>
+                                <input type="hidden" id="telefilm" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- THRILLER-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-29">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>THRILLER<h3>
+                                <input type="hidden" id="thriller" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WESTERN-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-30">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>WESTERN<h3>
+                                <input type="hidden" id="western" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- THEATRE-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-31">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>THÉÂTRE<h3>
+                                <input type="hidden" id="theatre" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SPORT-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 w-100 my-3" style="padding-bottom:20px;">
+                    <div class="w-100" id="bg-32">
+                        <div class="hoverfx">
+                            <div class="textbgbox">
+                                <h3>SPORT<h3>
+                                <input type="hidden" id="sport" name="genre[]" class="inpt-genre-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</section>
+fin section
