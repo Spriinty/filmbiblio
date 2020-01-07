@@ -109,23 +109,23 @@ button:focus {
 }
 
 .text-align-end{
-text-align: end;
+    text-align: end;
 }
 
 .bg-red{
-background-color:#e82e32;
-width: 40px;
-height: 40px;
-border: solid 5px#E82E32;
-border-radius: 50%;
+    background-color:#e82e32;
+    width: 40px;
+    height: 40px;
+    border: solid 5px#E82E32;
+    border-radius: 50%;
 } 
 
 .zoom {
-    transition: transform .2s; /* Animation */
+    transition: transform .2s; 
     width: 100%;
     height: 100%;
 }
     
 .zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
 } 
