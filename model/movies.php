@@ -6,7 +6,7 @@ function test_input($data) {
     return $data;
     }
     try {
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
