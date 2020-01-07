@@ -6,19 +6,8 @@ function test_input($data) {
     return $data;
     }
     try {
-<<<<<<< HEAD
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
+        $base = new PDO('mysql:localhost; dbname=testcine', 'root', 'online@2017');
         // $base = new PDO('mysql:host=localhost; dbname=quentinp364_testcine', 'quentinp364', '6FbZ1+ZEyQH72A==');
-
-=======
-<<<<<<< HEAD
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
-        // $base = new PDO('mysql:host=localhost; dbname=quentinp364_testcine', 'quentinp364', '6FbZ1+ZEyQH72A==');
-
-=======
-        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
->>>>>>> 8a684dfda68852ac4ed506d9b75e534cedc02a10
->>>>>>> 119576460c056278ebe38cfb657b18721633b1e7
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
