@@ -27,7 +27,7 @@ function test_input($data) {
                 <div class="row mt-4 col-12 text-center text-white">
                     <div class="col-3 justify-content-left">
                         <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
-                            src="./views/media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
+                            src="/views/media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
                             name="'.$key['idfilm'].'">
                         </p>
                     </div>
@@ -58,7 +58,7 @@ function test_input($data) {
                 <div class="row mt-4 col-12 text-center text-white">
                     <div class="col-3 justify-content-left">
                         <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
-                            src="./views/media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
+                            src="/views/media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
                             name="'.$key['idfilm'].'">
                         </p>
                     </div>
