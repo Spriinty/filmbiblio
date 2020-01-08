@@ -15,8 +15,8 @@ function test_input($data) {
 
     if(isset($_POST['search']) && $_POST['search']!='') {
         $search=$_POST['search'];
-
-    $reponse1= $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `titre` LIKE '%:search%' GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
+        $search="%".$search."%";
+    $reponse1= $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `titre` LIKE :search GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
     $reponse1->bindParam(':search',$search,PDO::PARAM_STR);
     $reponse1->execute();
     $allData1=$reponse1->fetchAll();
