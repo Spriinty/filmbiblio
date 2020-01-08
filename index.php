@@ -22,9 +22,16 @@ if(isset($_SERVER['REQUEST_URI']) && !empty($_SERVER['REQUEST_URI'])){
         case '/views/reqgenre.php':
             require __DIR__ . '/views/home.html';
         break;
-        case '/views/genre.html':
+        case '/home':
             require __DIR__ . '/views/home.html';
         break;
+        case '/genre':
+            require __DIR__ . '/views/genre.html';
+        break;
+        case '/404':
+            require __DIR__ . '/views/page404.php';
+        break;
+        
         default:
             http_response_code(404);
             require __DIR__ . '/views/page404.php';
