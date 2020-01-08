@@ -6,8 +6,12 @@ function test_input($data) {
     return $data;
     }
     try {
+<<<<<<< HEAD
         $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', 'online@2017');
         // $base = new PDO('mysql:host=localhost; dbname=quentinp364_testcine', 'quentinp364', '6FbZ1+ZEyQH72A==');
+=======
+        $base = new PDO('mysql:host=localhost; dbname=testcine', 'root', '1234');
+>>>>>>> dc21c4fe067befbe57e5cbf2e80e5bc78a45aaa5
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
@@ -15,9 +19,10 @@ function test_input($data) {
     $base->exec("SET CHARACTER SET utf8");
 
     if(isset($_POST['search']) && $_POST['search']!='') {
-        
+        $search=$_POST['search'];
 
-    $reponse1= $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `titre` LIKE '%".$_POST['search']."%' GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
+    $reponse1= $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `titre` LIKE '%:search%' GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
+    $reponse1->bindParam(':search',$search,PDO::PARAM_STR);
     $reponse1->execute();
     $allData1=$reponse1->fetchAll();
         foreach ($allData1 as $key) {
@@ -26,7 +31,7 @@ function test_input($data) {
                 <div class="row mt-4 col-12 text-center text-white">
                     <div class="col-3 justify-content-left">
                         <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
-                            src="./media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
+                            src="./views/media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
                             name="'.$key['idfilm'].'">
                         </p>
                     </div>
@@ -47,8 +52,8 @@ function test_input($data) {
         $post = $val;   
     if(isset($post)) {
         
-        $reponsefilm1 = $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `idfilm`=$post GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
-        
+        $reponsefilm1 = $base->prepare("SELECT`titre`,`description`, `anneesortie`, `realisateur`, `idfilm`, GROUP_CONCAT(`genre`) AS newgenre FROM  `table_films` INNER JOIN table_films_has_theme_genre, genre WHERE     table_films.idfilm = table_films_has_theme_genre.table_films_idfilm AND table_films_has_theme_genre.theme_genre_id_genre = genre.id AND `idfilm`=:post GROUP BY titre ORDER BY `table_films`.`idfilm`  ASC");
+        $reponsefilm1->bindParam(':post',$post,PDO::PARAM_STR);
         $reponsefilm1->execute();
         $allimagedata1 = $reponsefilm1->fetchAll();
         foreach ($allimagedata1 as $key) {
@@ -57,7 +62,7 @@ function test_input($data) {
                 <div class="row mt-4 col-12 text-center text-white">
                     <div class="col-3 justify-content-left">
                         <p><input type="image" class="inpt-form-img film_cover shadow rounded img-fluid zoom"
-                            src="./media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
+                            src="./views/media/'.$key['idfilm'].'.jpg" alt="Affiche '.$key['titre'].'" width="241" height="332"
                             name="'.$key['idfilm'].'">
                         </p>
                     </div>
