@@ -1,4 +1,4 @@
-<pre><?php
+<?php
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -62,4 +62,4 @@ foreach ( $_POST as $genre  )  {
     } 
 }
 $base = null;
-?></pre>
+?>

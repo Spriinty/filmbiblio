@@ -21,6 +21,9 @@ $request = $_SERVER['REQUEST_URI'];
         case '/views/reqgenre.php':
             require __DIR__ . '/views/home.html';
         break;
+        case '/views/genre.html':
+            require __DIR__ . '/views/home.html';
+        break;
         default:
         http_response_code(404);
         require __DIR__ . '/views/home.html';
