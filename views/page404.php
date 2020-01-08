@@ -65,7 +65,7 @@
           </section>
           <h1 class="text-white">4<span>0</span>4 <span>E</span>rror <span>P</span>age</h1>
           <div class="link-container">
-            <a href="home.html" class="btn btn-link">Back to Home</a>
+            <a href="/home" class="btn btn-link">Back to Home</a>
             <div class=" col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 mt-5 ">
               <p><img src="../media/popcorn.png" width="70" height="80" alt="logo"></p>
             </div>
